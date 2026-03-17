@@ -90,8 +90,6 @@ Consecuencias prácticas:
 Sensores → STM32 → LoRaWAN → Raspberry Pi 3B+ → Flask App → Navegador móvil (WiFi)
 ```
 
-**Nota sobre LoRaWAN en este contexto:** LoRaWAN es un protocolo diseñado para transmisión de datos de bajo volumen a larga distancia con bajo consumo energético. Su uso aquí entre el microcontrolador de campo y la Raspberry Pi es funcional pero introduce latencia variable y limitaciones de ancho de banda que restringen la frecuencia máxima de transmisión de datos. Para distancias cortas (vessel → Raspberry Pi en la misma instalación), una conexión cableada (UART, I²C, SPI) o WiFi directa sería más eficiente. La elección de LoRaWAN sugiere que el vessel opera a cierta distancia del punto de procesamiento, o que se contempla escalar a múltiples unidades en campo.
-
 ---
 
 ## 6. Gestión de recetas
@@ -99,8 +97,9 @@ Sensores → STM32 → LoRaWAN → Raspberry Pi 3B+ → Flask App → Navegador 
 | Atributo | Especificación |
 |---|---|
 | Tipo de receta | Multietapa con duraciones definidas |
-| Transición entre etapas | Automática por tiempo |
+| Transición entre etapas | Manual |
 | Transición por variable (event-driven) | No disponible — solo por tiempo |
+| Controles de receta | Solo por temperatura (event-driven) |
 | Configuración | Desde aplicación web en dispositivo móvil |
 | Visualización | Dashboard en navegador móvil vía WiFi |
 
@@ -111,7 +110,6 @@ Sensores → STM32 → LoRaWAN → Raspberry Pi 3B+ → Flask App → Navegador 
 ### Lo que el sistema hace bien
 - Control de temperatura por PID con elemento calefactor dedicado
 - Registro de múltiples variables simultáneas
-- Recetas multietapa con transición automática
 - Acceso remoto desde móvil sin infraestructura adicional
 - Bajo costo de fabricación y componentes accesibles localmente
 - LoRaWAN permite despliegue en campo sin WiFi en el punto del vessel
@@ -124,12 +122,11 @@ Sensores → STM32 → LoRaWAN → Raspberry Pi 3B+ → Flask App → Navegador 
 | CO₂ medido con CCS811 (eCO₂, no real) | Datos de CO₂ no confiables ni comparables | Sensor NDIR o presión de alta resolución |
 | pH con módulo analógico genérico | Precisión real ±0.1–0.2 pH; alta deriva | Electrodo industrial con salida digital |
 | Sin ORP | No hay caracterización del estado redox | ORP en Advanced y Ultra |
-| Sin DO | No hay información de oxigenación | DO en Advanced |
+| Sin DO | No hay información de oxigenación | DO en Advanced y propagador de Ultra |
 | Proceso estático | Gradientes térmicos y químicos en SSF | Recirculación y/o agitación en Advanced/Ultra |
-| Desempeño inferior en SSF | Limitación documentada por el operador | Mecanismo de humectación y mezcla en Advanced/Ultra |
+| Desempeño inferior en SSF | Limitación en agitación, enfriado de lixiviados y recirculación | Mecanismo de humectación y mezcla en Advanced/Ultra |
 | Transición de etapas solo por tiempo | No hay arresto automático por pH o presión | Lógica event-driven en Advanced/Ultra |
 | Vessel plástico | Limpieza más difícil; no apto para CIP con químicos agresivos | Vessel AISI 316L en Advanced/Ultra |
-| Sin buffer local robusto | Dependencia de disponibilidad de Raspberry Pi | Buffer no volátil 30 días en Advanced/Ultra |
 
 ---
 
