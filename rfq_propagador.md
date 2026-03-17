@@ -34,10 +34,10 @@ El propagador no fermenta café. Su sustrato es un medio de cultivo líquido def
 
 ## 3. Capacidad y volumen de trabajo
 
-- **Volumen de trabajo:** 20–100 L (el proveedor debe justificar el volumen propuesto en función de la relación inóculo:reactor principal de 1–5% v/v)
-- Vessel de acero inoxidable AISI 316L, pulido sanitario interior Ra ≤ 0.8 µm
+- **Volumen de trabajo:** 20–100 L (El volumen propuesto en función de la relación inóculo:reactor principal de 1–5% v/v)
+- Vessel de acero inoxidable
 - Fondo cónico para drenaje completo sin residuos
-- El proveedor debe indicar el volumen mínimo y máximo de trabajo operativo
+- Se requiere indicar el volumen mínimo y máximo de trabajo operativo
 
 ---
 
@@ -52,7 +52,7 @@ El propagador requiere exactamente cuatro variables. No más.
 | **Oxígeno disuelto (DO)** | Variable de control primaria en propagación aerobia; determina tasa de crecimiento y rendimiento de biomasa | ±0.5 mg/L | 30 s |
 | **Presión** | Seguridad y verificación de integridad del sistema de aireación | ±0.05 bar | 60 s |
 
-Los sensores deben ser de grado industrial, cuerpo AISI 316L, compatibles con CIP. Salida digital preferida (Modbus o equivalente).
+Los sensores deben ser de grado industrial, compatibles con CIP. Salida digital preferida (Modbus o equivalente).
 
 **Sobre el DO:** a diferencia del biorreactor SIAF, aquí el DO es la variable de control activa durante todo el proceso. La tasa de aireación se regula para mantener el DO en el rango óptimo de la especie en cultivo (típicamente 20–80% de saturación). Es el sensor más importante del sistema.
 
@@ -62,7 +62,7 @@ Los sensores deben ser de grado industrial, cuerpo AISI 316L, compatibles con CI
 
 La razón es funcional: el control de DO en lazo cerrado requiere una respuesta en tiempo real sin retardo. Cualquier circuito de extracción externa introduce una latencia que degrada la calidad del control, especialmente en la fase exponencial de crecimiento donde el consumo de oxígeno cambia rápidamente. En un medio líquido homogéneo como el usado en propagación, la inmersión directa no presenta las desventajas que justificarían una cámara de muestreo en el biorreactor de fermentación.
 
-El proveedor debe especificar el procedimiento de calibración de cada sensor en inmersión, incluyendo acceso físico sin desmontaje del vessel.
+Se debe especificar el procedimiento de calibración de cada sensor en inmersión, incluyendo acceso físico sin desmontaje del vessel.
 
 ---
 
@@ -133,13 +133,13 @@ A partir de µ estimado en tiempo real, el sistema calcula:
 
 **Limitación explícita a documentar:**
 
-El proveedor debe declarar claramente en su propuesta que este es un **modelo estimativo basado en proxies indirectos**, no un conteo directo. La precisión del modelo depende de la calidad de los datos de calibración acumulados. Se recomienda al usuario validar con conteo externo los primeros 5–10 ciclos de cada cepa nueva antes de confiar en la proyección como único criterio de transferencia.
+Se debe declarar claramente en su propuesta que este es un **modelo estimativo basado en proxies indirectos**, no un conteo directo. La precisión del modelo depende de la calidad de los datos de calibración acumulados. Se recomienda al usuario validar con conteo externo los primeros 5–10 ciclos de cada cepa nueva antes de confiar en la proyección como único criterio de transferencia.
 
 ### 5.5 Transferencia del inóculo al reactor principal
 
 - Puerto de descarga aséptico compatible con la línea de inoculación del Biorreactor Ultra
 - Drenaje completo del volumen de trabajo sin residuos en fondo
-- El proveedor debe describir el procedimiento de transferencia aséptica
+- Se debe describir el procedimiento de transferencia aséptica
 
 ---
 
@@ -194,12 +194,12 @@ Este registro debe adjuntarse automáticamente al reporte del lote del reactor p
 ### 8.2 Esterilización
 
 - El sistema debe soportar **esterilización por vapor (SIP)** o **autoclavado** de componentes en contacto con el cultivo, dado que la contaminación del inóculo se trasladaría al reactor principal
-- Alternativamente, el proveedor puede proponer un protocolo de sanitización química validado (ej. NaOH + ácido peracético) como sustituto del SIP, justificando su equivalencia microbiológica
+- Alternativamente, se puede proponer un protocolo de sanitización química validado (ej. NaOH + ácido peracético) como sustituto del SIP, justificando su equivalencia microbiológica
 
 ### 8.3 Filtro de aire
 
 - Filtro estéril en línea de entrada de aire (0.2 µm), con indicador de diferencial de presión
-- El proveedor debe especificar frecuencia de reemplazo y disponibilidad en Colombia
+- Se debe especificar frecuencia de reemplazo y disponibilidad en Colombia
 
 ---
 
@@ -208,12 +208,12 @@ Este registro debe adjuntarse automáticamente al reporte del lote del reactor p
 - Temperatura ambiente: 15–35 °C
 - Equipo de menor exigencia ambiental que el reactor principal — puede ubicarse en sala de preparación o laboratorio básico de finca
 - Protección del gabinete de control: IP54 mínimo (no requiere IP65 si opera en interior)
-- Suministro eléctrico: el proveedor debe especificar requerimientos
+- Suministro eléctrico: Se requiere especificar requerimientos
 - Suministro de aire: compresor incluido en el alcance o especificación de compresor externo requerido
 
 ---
 
-## 10. Información requerida al proveedor
+## 10. Información requerida:
 
 1. Justificación del volumen de trabajo propuesto en relación al reactor principal
 2. Ficha técnica de sensores (especialmente sensor de DO: principio de medición, membrana, vida útil en medio con levaduras)
