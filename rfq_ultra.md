@@ -9,7 +9,7 @@
 
 ## 1. Contexto y objetivo
 
-Se solicita cotización para un sistema de biorreactor de alto desempeño orientado a la producción reproducible de café de especialidad y a la generación de conocimiento de proceso. El sistema debe permitir no solo ejecutar fermentaciones controladas, sino **comprender qué ocurre dentro del biorreactor** en tiempo real, con resolución suficiente para correlacionar dinámica fermentativa con perfil de taza.
+Se requiere estimar el diseño y costo de un sistema de biorreactor de alto desempeño orientado a la producción reproducible de café de especialidad y a la generación de conocimiento de proceso. El sistema debe permitir no solo ejecutar fermentaciones controladas, sino **comprender qué ocurre dentro del biorreactor** en tiempo real, con resolución suficiente para correlacionar dinámica fermentativa con perfil de taza.
 
 El principio de diseño central es **precisión sobre completitud**: el sistema debe medir pocas variables pero con exactitud, confiabilidad y resolución temporal que justifiquen su uso en toma de decisiones reales.
 
@@ -60,13 +60,13 @@ Los sensores deben ser de grado industrial (no de laboratorio portátil), con cu
 
 ### 4.2 Arquitectura de medición: inmersión directa vs. cámara de muestreo
 
-El proveedor debe proponer y justificar la arquitectura de medición para pH, ORP y presión. Se aceptan dos arquitecturas:
+Se requiere definir y justificar la arquitectura de medición para pH, ORP y presión. Se aceptan dos arquitecturas:
 
 **Opción A — Inmersión directa:** sensores instalados directamente en el vessel, en contacto con el sustrato o lixiviado.
 
 **Opción B — Cámara de muestreo externa (flow cell):** el lixiviado se extrae continuamente mediante bomba peristáltica hacia una cámara externa donde están los sensores, y se reincorpora al vessel de forma continua y cuantificada.
 
-Si el proveedor propone la Opción B, debe especificar obligatoriamente:
+Si se propone la Opción B, debe especificar obligatoriamente:
 
 - Retardo de medición entre condición real en vessel y lectura del sensor (en segundos o minutos)
 - Diseño del circuito de reincorporación y su impacto sobre el balance de masa y la integridad de la presión del headspace en modo SIAF — este punto es crítico y debe resolverse sin comprometer la presión como variable de trazado
@@ -177,9 +177,7 @@ La estructura debe ser estable entre versiones de firmware. Cualquier cambio en 
 ### 7.3 Acceso externo
 
 - **API REST** para consulta en tiempo real e histórico
-- **MQTT** para telemetría hacia sistemas externos (IoT / plataformas de análisis)
-- Exportación por lote: serie temporal completa en CSV y JSON
-- Sin dependencia de servicios de nube propietarios del proveedor para acceso a datos propios
+- Sin dependencia de servicios de nube propietarios para acceso a datos propios
 
 ### 7.4 Reporte de lote
 
@@ -209,7 +207,7 @@ Al cierre de cada lote, el sistema genera automáticamente:
 - Acceso directo a todos los sensores sin desmontaje
 - Protocolos guiados desde HMI: pH (buffer 2 puntos), ORP (solución de referencia), presión (referencia certificada)
 - Registro inmutable de cada calibración: fecha, usuario, valores pre/post
-- Alertas de recalibración por tiempo definido por el proveedor según sensor
+- Alertas de recalibración por tiempo definido según sensor
 
 ### 9.2 Limpieza CIP
 
@@ -220,7 +218,7 @@ Al cierre de cada lote, el sistema genera automáticamente:
 
 ### 9.3 Componentes críticos
 
-El proveedor debe especificar:
+Se requiere especificar:
 
 - Vida útil esperada de cada sensor (horas de operación o número de ciclos)
 - Disponibilidad de repuestos en Colombia (stock local o tiempo de importación garantizado)
@@ -233,21 +231,11 @@ El proveedor debe especificar:
 - Temperatura ambiente: 5–40 °C; HR: 20–95% sin condensación
 - Gabinete de control: protección **IP65 mínimo**
 - **UPS integrado:** autonomía mínima de **2 horas** para adquisición de datos y protocolo de arresto controlado
-- El proveedor debe especificar: suministro eléctrico, consumo de agua, drenaje, presión y caudal de gases
+- Se requiere especificar: suministro eléctrico, consumo de agua, drenaje, presión y caudal de gases
 
 ---
 
-## 11. Requisito de integración proceso–calidad de taza
-
-El sistema debe soportar el cierre del ciclo proceso–resultado sensorial:
-
-- El ID de lote debe ser vinculable externamente a una hoja de catación SCA
-- El proveedor debe documentar el formato de exportación de datos con suficiente detalle para que un sistema externo construya esta correlación
-- No se requiere integración nativa con software de catación, pero el formato de datos debe permitirla sin transformaciones propietarias
-
----
-
-## 12. Información requerida al proveedor
+## 11. Información requerida
 
 1. Descripción de la solución y diagrama P&ID simplificado
 2. Ficha técnica de cada sensor: marca, modelo, principio de medición, rango, precisión, vida útil
@@ -260,14 +248,3 @@ El sistema debe soportar el cierre del ciclo proceso–resultado sensorial:
 9. Tiempo de entrega e instalación
 10. Referencias verificables en contexto de poscosecha de café o fermentación de alimentos
 
----
-
-## 13. Criterios de evaluación
-
-| Criterio | Peso |
-|---|---|
-| Precisión y confiabilidad de los cuatro sensores primarios | 25% |
-| Robustez del modo SIAF y hermeticidad verificable | 20% |
-| Calidad del sistema de datos (estructura, API, autonomía offline) | 20% |
-| Funcionalidad de recetas con lógica event-driven y arresto automático | 20% |
-| Soporte local, repuestos y plan de mantenimiento | 15% |
