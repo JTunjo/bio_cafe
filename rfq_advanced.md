@@ -17,7 +17,7 @@ El sistema debe funcionar como **plataforma de ejecución de recetas y adquisici
 
 ## 2. Alcance del suministro
 
-El proveedor deberá suministrar:
+Se espera suministrar:
 
 - Diseño y fabricación del sistema completo
 - Sistema de control (hardware + firmware)
@@ -59,20 +59,20 @@ El sistema debe permitir transiciones entre modos dentro del mismo lote según r
 
 ### 4.2 Arquitectura de medición: inmersión directa vs. cámara de muestreo
 
-El proveedor debe proponer y justificar la arquitectura de medición para pH, ORP y DO. Se aceptan dos arquitecturas:
+Se solicita proponer y justificar la arquitectura de medición para pH, ORP y DO. Se aceptan dos arquitecturas:
 
 **Opción A — Inmersión directa:** sensores instalados directamente en el vessel, en contacto con el sustrato o lixiviado.
 
 **Opción B — Cámara de muestreo externa (flow cell):** el lixiviado se extrae continuamente mediante bomba peristáltica hacia una cámara externa donde están los sensores, y se reincorpora al vessel de forma continua y cuantificada.
 
-Si el proveedor propone la Opción B, debe especificar obligatoriamente:
+Si se propone la Opción B, se espera poder definir:
 
 - Retardo de medición entre condición real en vessel y lectura del sensor (en segundos o minutos)
 - Diseño del circuito de reincorporación y su impacto sobre el balance de masa y la integridad de la presión del headspace en modo SIAF
 - Caudal de extracción y reincorporación, y gestión en SSF donde el lixiviado disponible puede ser limitado
 - Procedimiento de limpieza CIP de la cámara y las líneas de muestreo
 - Impacto sobre frecuencia de calibración comparado con inmersión directa
-- Para el sensor de DO específicamente: el proveedor debe justificar que el retardo de la cámara no compromete el control en lazo cerrado si DO es utilizado como variable de control activa
+- Para el sensor de DO específicamente: ¿Se puede garantizar que el retardo de la cámara no compromete el control en lazo cerrado si DO es utilizado como variable de control activa?
 
 La temperatura, la presión del headspace y el CO₂ en headspace se miden siempre mediante sensores instalados directamente en el vessel o en la línea de gas, independientemente de la arquitectura elegida para los demás sensores.
 
@@ -261,7 +261,7 @@ El sistema debe soportar al menos:
 
 ### 9.3 Servicios requeridos
 
-El proveedor debe especificar en su propuesta:
+Cuáles serían los valores de:
 
 - Consumo de agua (proceso + CIP)
 - Requerimientos de drenaje
@@ -270,9 +270,9 @@ El proveedor debe especificar en su propuesta:
 
 ---
 
-## 10. Información requerida al proveedor
+## 10. Información requerida
 
-La propuesta debe incluir:
+La estimación requiere al menos:
 
 1. Descripción de la solución y arquitectura del sistema
 2. Especificaciones técnicas completas de sensores y actuadores (marca, modelo, rango, precisión)
@@ -283,17 +283,3 @@ La propuesta debe incluir:
 7. Plan de mantenimiento preventivo: frecuencia, componentes críticos, disponibilidad de repuestos en Colombia
 8. Costos detallados (equipo, instalación, capacitación, soporte)
 9. Tiempo de entrega
-10. Referencias de instalaciones similares (preferiblemente en contexto cafetero latinoamericano)
-
----
-
-## 11. Criterios de evaluación
-
-| Criterio | Peso |
-|---|---|
-| Cumplimiento funcional de requerimientos | 30% |
-| Calidad y robustez del sistema de datos | 20% |
-| Flexibilidad operativa (recetas, modos) | 15% |
-| Facilidad de operación en contexto de finca | 15% |
-| Costo-beneficio total | 10% |
-| Soporte local y disponibilidad de repuestos | 10% |
