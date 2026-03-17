@@ -60,7 +60,7 @@ Los sensores deben ser de grado industrial, compatibles con CIP. Salida digital 
 
 **Todos los sensores del propagador deben estar instalados directamente en el vessel, en inmersión en el medio de cultivo. No se acepta arquitectura de cámara de muestreo externa.**
 
-La razón es funcional: el control de DO en lazo cerrado requiere una respuesta en tiempo real sin retardo. Cualquier circuito de extracción externa introduce una latencia que degrada la calidad del control, especialmente en la fase exponencial de crecimiento donde el consumo de oxígeno cambia rápidamente. En un medio líquido homogéneo como el usado en propagación, la inmersión directa no presenta las desventajas que justificarían una cámara de muestreo en el biorreactor de fermentación.
+La razón es funcional: el control de DO en lazo cerrado requiere una respuesta en tiempo real sin retardo. Cualquier circuito de extracción externa introduce una latencia que degrada la calidad del control, especialmente en la fase exponencial de crecimiento donde el consumo de oxígeno cambia rápidamente. Aquí la inmersión directa no presenta las desventajas que justificarían una cámara de muestreo en el biorreactor de fermentación.
 
 Se debe especificar el procedimiento de calibración de cada sensor en inmersión, incluyendo acceso físico sin desmontaje del vessel.
 
@@ -71,7 +71,7 @@ Se debe especificar el procedimiento de calibración de cada sensor en inmersió
 ### 5.1 Temperatura
 
 - Calentamiento y enfriamiento activos (camisa o serpentín)
-- Rango operativo: 20–40 °C
+- Rango operativo: 18–40 °C
 - Sin requisito de rampa rápida de enfriamiento — el arresto de propagación es por tiempo, no por temperatura de emergencia
 
 ### 5.2 Aireación y oxigenación
@@ -107,13 +107,13 @@ El sistema debe incluir un **modelo cinético de crecimiento en línea** que per
 
 **Funcionamiento del modelo:**
 
-El sistema debe estimar la tasa de crecimiento específica (µ, h⁻¹) de forma continua a partir de las variables medidas, utilizando como proxies de actividad metabólica:
+El sistema debe estimar la tasa de crecimiento específica de forma continua a partir de las variables medidas, utilizando como proxies de actividad metabólica:
 
 - Tasa de consumo de oxígeno disuelto (dDO/dt) — indicador primario
 - Evolución de pH — indicador secundario
 - Temperatura — factor corrector del modelo
 
-A partir de µ estimado en tiempo real, el sistema calcula:
+El sistema calcula:
 
 - **Densidad celular estimada actual** (modelo exponencial: N(t) = N₀ · e^(µ·t))
 - **Tiempo estimado para alcanzar densidad objetivo**
@@ -122,8 +122,7 @@ A partir de µ estimado en tiempo real, el sistema calcula:
 **Requisitos de implementación:**
 
 - El modelo debe ser **calibrable por el usuario**: el sistema debe permitir ingresar resultados de conteos externos durante o después del ciclo para ajustar los parámetros del modelo a las condiciones reales de la finca (cepa, medio, temperatura)
-- El sistema debe mantener un **historial de ciclos con conteos validados** que permita refinar el modelo con el tiempo — el sistema aprende de cada ciclo en que el usuario provee un conteo de referencia
-- La biblioteca de cepas debe ser editable: el usuario puede crear perfiles con µ máximo (µ_max) y parámetros de Monod específicos para las cepas que utiliza
+- El sistema debe permitir exportar un **historial de ciclos con conteos validados** que permita refinar externamente el modelo con el tiempo — que el sistema aprenda de cada ciclo en que el usuario provee un conteo de referencia
 - La proyección debe actualizarse **cada 5 minutos** como mínimo y mostrarse de forma prominente en la HMI
 
 **Alerta de cosecha:**
@@ -225,14 +224,3 @@ Este registro debe adjuntarse automáticamente al reporte del lote del reactor p
 8. Costos detallados
 9. Tiempo de entrega
 
----
-
-## 11. Criterios de evaluación
-
-| Criterio | Peso |
-|---|---|
-| Confiabilidad del control de DO en lazo cerrado | 30% |
-| Efectividad y simplicidad del protocolo de esterilización/sanitización | 25% |
-| Trazabilidad del inóculo vinculada al lote del reactor principal | 20% |
-| Facilidad de limpieza y mantenimiento en contexto de finca | 15% |
-| Costo-beneficio | 10% |
