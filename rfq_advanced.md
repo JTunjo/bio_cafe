@@ -154,8 +154,6 @@ Cada registro debe incluir:
 ### 5.4 Acceso y exportación
 
 - API REST para consulta de datos en tiempo real e histórico
-- Exportación por lote en formato **CSV y JSON**
-- Protocolo **MQTT** para telemetría en tiempo real hacia sistemas externos
 - Consulta histórica por: ID de lote, variable, rango de timestamp
 
 ### 5.5 Resumen automático por lote
@@ -282,4 +280,5 @@ La estimación requiere al menos:
 6. Procedimiento y tiempo estimado de instalación
 7. Plan de mantenimiento preventivo: frecuencia, componentes críticos, disponibilidad de repuestos en Colombia
 8. Costos detallados (equipo, instalación, capacitación, soporte)
-9. Tiempo de entrega
+9. Descripción de servicios requeridos (9.3)
+10. Tiempo de entrega
