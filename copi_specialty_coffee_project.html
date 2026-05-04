@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Colombia–Philippines Joint Venture · Liberica &amp; Excelsa Specialty Coffee Development</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet"/>
+<style>
+/* ── RESET & BASE ─────────────────────────────────────── */
+*{box-sizing:border-box;margin:0;padding:0;}
+
+:root{
+  --col-dark:#131313;
+  --col-mid:#2d5a27;
+  --col-accent:#4a8c3f;
+  --col-light:#7ab648;
+  --col-gold:#c8a951;
+  --col-bg:#fafaf7;
+  --col-bg2:#f0ede3;
+  --col-border:#d4d0c0;
+  --col-text:#1a1a1a;
+  --col-muted:#555;
+  --col-table-head:#131313;
+  --col-table-alt:#f2f0e8;
+  --col-pill:#cfcfcf;
+  --col-box:#cfcfcf;
+}
+
+body{
+  font-family:'Montserrat',sans-serif;
+  font-size:9pt;
+  line-height:1.6;
+  color:var(--col-text);
+  background:#fff;
+  max-width:210mm;
+  margin:0 auto;
+}
+
+/* ── PRINT ─────────────────────────────────────────────── */
+@media print{
+  @page{
+    size:A4;
+    margin:12mm 14mm 12mm 14mm;
+  }
+  body{max-width:100%;font-size:8.5pt;}
+  .cover{page-break-after:always;min-height:100vh;}
+  .page{page-break-before:always;}
+  .no-break{page-break-inside:avoid;}
+  .toc-page{page-break-after:always;}
+  a{color:inherit;text-decoration:none;}
+}
+
+/* ── SCREEN PREVIEW ─────────────────────────────────────── */
+@media screen{
+  body{padding:0;}
+  .cover{min-height:100vh;}
+  .page,.toc-page{padding:14mm 16mm;}
+}
+
+/* ── COVER ─────────────────────────────────────────────── */
+.cover{
+  background:#131313;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:16mm 20mm 12mm;
+  position:relative;
+  overflow:hidden;
+}
+.cover::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(ellipse 60% 50% at 15% 50%,rgba(74,140,63,0.13) 0%,transparent 70%),
+    radial-gradient(ellipse 40% 40% at 85% 20%,rgba(200,169,81,0.08) 0%,transparent 60%);
+  pointer-events:none;
+}
+
+.cover-flags{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:32px;
+  position:relative;
+}
+.flag-block{display:flex;flex-direction:column;align-items:center;gap:5px;}
+.flag-img{
+  width:56px;height:36px;
+  border-radius:2px;
+  object-fit:cover;
+  box-shadow:0 1px 6px rgba(0,0,0,0.5);
+  display:block;
+}
+
+.flag-label{
+  font-size:6.5pt;letter-spacing:2px;text-transform:uppercase;
+  color:rgba(255,255,255,0.45);font-weight:600;
+}
+.flag-connector{font-size:16pt;color:var(--col-gold);font-weight:300;}
+
+.cover-eyebrow{
+  font-size:7pt;letter-spacing:3.5px;text-transform:uppercase;
+  color:var(--col-gold);margin-bottom:14px;font-weight:700;position:relative;
+}
+.cover-title{
+  font-size:26pt;font-weight:800;color:#fff;
+  text-align:center;line-height:1.15;margin-bottom:12px;position:relative;
+}
+.cover-title span{color:var(--col-gold);}
+.cover-subtitle{
+  font-size:9.5pt;color:rgba(255,255,255,0.65);
+  text-align:center;max-width:520px;line-height:1.65;
+  margin-bottom:36px;font-weight:400;position:relative;
+}
+.cover-rule{
+  width:60px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--col-gold),transparent);
+  margin:0 auto 32px;position:relative;
+}
+
+.cover-partners{
+  display:flex;gap:36px;justify-content:center;
+  position:relative;margin-bottom:32px;
+}
+.cover-partner{text-align:center;}
+.cover-partner-role{
+  font-size:6.5pt;letter-spacing:2px;text-transform:uppercase;
+  color:rgba(255,255,255,0.35);margin-bottom:3px;font-weight:600;
+}
+.cover-partner-name{font-size:9.5pt;color:rgba(255,255,255,0.9);font-weight:700;}
+.cover-partner-detail{font-size:7.5pt;color:rgba(255,255,255,0.4);font-style:italic;margin-top:2px;}
+.cover-sep{color:rgba(255,255,255,0.15);font-size:18pt;align-self:center;}
+
+.cover-footer{
+  position:absolute;bottom:22px;left:0;right:0;
+  text-align:center;font-size:6.5pt;
+  color:rgba(255,255,255,0.25);letter-spacing:1px;font-weight:500;
+}
+
+/* ── TOC ─────────────────────────────────────────────── */
+.toc-page{padding:14mm 16mm;}
+.toc-head{font-size:15pt;font-weight:800;color:var(--col-dark);margin-bottom:4px;}
+.toc-rule{width:36px;height:2px;background:var(--col-gold);margin-bottom:22px;}
+.toc-entry{
+  display:flex;justify-content:space-between;align-items:baseline;
+  padding:5px 0;border-bottom:1px dotted var(--col-border);font-size:8.5pt;
+}
+.toc-entry.major{font-weight:700;color:var(--col-dark);padding-top:11px;font-size:9pt;}
+.toc-entry.minor{padding-left:16px;color:var(--col-muted);font-size:8pt;}
+.toc-num{color:var(--col-accent);font-weight:700;margin-right:8px;min-width:24px;}
+
+/* ── CONTENT PAGES ─────────────────────────────────────── */
+.page{padding:14mm 16mm;}
+
+/* ── SECTION HEADERS ─────────────────────────────────── */
+.section-header{
+  display:flex;align-items:flex-start;gap:12px;
+  margin-bottom:20px;padding-bottom:12px;
+  border-bottom:1.5px solid var(--col-accent);
+}
+.section-number{
+  font-size:22pt;font-weight:800;color:var(--col-gold);
+  line-height:1;min-width:36px;
+}
+.section-eyebrow{
+  font-size:6.5pt;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--col-accent);font-weight:700;margin-bottom:2px;
+}
+.section-title{font-size:14pt;font-weight:800;color:var(--col-dark);line-height:1.15;}
+
+/* ── TYPOGRAPHY ─────────────────────────────────────── */
+h2{
+  font-size:10.5pt;font-weight:700;color:var(--col-dark);
+  margin:22px 0 8px;padding-bottom:4px;
+  border-bottom:1px solid var(--col-border);
+}
+h3{
+  font-size:9pt;font-weight:700;color:var(--col-mid);
+  margin:16px 0 6px;text-transform:uppercase;letter-spacing:0.5px;
+}
+h4{font-size:9pt;font-weight:700;color:var(--col-text);margin:13px 0 5px;}
+p{margin-bottom:10px;text-align:justify;}
+ul,ol{margin:6px 0 12px 18px;}
+li{margin-bottom:4px;}
+strong{color:var(--col-dark);font-weight:700;}
+em{font-style:italic;}
+
+/* ── CALLOUT BOXES ──────────────────────────────────── */
+/* No accent borders — all boxes bg #CFCFCF, bold white title on #131313 */
+.callout{
+  background:var(--col-box);
+  border-radius:0;
+  margin:16px 0;
+  overflow:hidden;
+}
+.callout-title{
+  background:#131313;
+  color:#fff;
+  font-size:7pt;
+  font-weight:700;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  padding:6px 14px;
+}
+.callout-body{padding:12px 14px;font-size:8.5pt;color:var(--col-text);}
+
+/* ── TABLES ─────────────────────────────────────────── */
+table{
+  width:100%;border-collapse:collapse;
+  margin:12px 0 18px;font-size:8pt;
+}
+th{
+  background:var(--col-table-head);color:#fff;
+  padding:7px 10px;text-align:left;
+  font-weight:700;font-size:7.5pt;letter-spacing:0.3px;
+}
+td{
+  padding:6px 10px;border-bottom:1px solid var(--col-border);
+  vertical-align:top;
+}
+tr:nth-child(even) td{background:var(--col-table-alt);}
+.td-num{text-align:right;font-weight:600;}
+.td-bold{font-weight:700;}
+.td-cat td{
+  background:#e0ddd3 !important;
+  font-weight:700;color:var(--col-dark);
+  font-size:7.5pt;letter-spacing:0.5px;
+  text-transform:uppercase;
+  padding:5px 10px;
+}
+.td-total td{
+  background:#131313 !important;color:#fff;
+  font-weight:700;border-bottom:none;
+}
+.td-sub td{background:#ece9de !important;font-weight:700;}
+
+/* ── STAT CARDS ─────────────────────────────────────── */
+.stat-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:10px;margin:16px 0 22px;
+}
+.stat-card{
+  background:var(--col-box);
+  border-radius:0;
+  padding:12px 10px;text-align:center;
+}
+.stat-value{font-size:15pt;font-weight:800;color:var(--col-mid);line-height:1;margin-bottom:5px;}
+.stat-label{font-size:7pt;color:var(--col-muted);text-transform:uppercase;letter-spacing:1px;font-weight:600;}
+
+/* ── PHASE PILLS → SQUARED BOXES ───────────────────── */
+.phase-badge{
+  display:block;
+  width:70%;
+  margin:0 auto 10px;
+  text-align:center;
+  padding:5px 0;
+  background:var(--col-box);
+  border-radius:0;
+  font-size:7.5pt;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:var(--col-dark);
+}
+
+/* ── TIMELINE ─────────────────────────────────────── */
+.timeline{position:relative;padding-left:22px;margin:16px 0;}
+.timeline::before{
+  content:'';position:absolute;left:6px;top:5px;bottom:5px;
+  width:1.5px;background:linear-gradient(to bottom,var(--col-accent),var(--col-gold));
+}
+.timeline-item{position:relative;margin-bottom:18px;}
+.timeline-item::before{
+  content:'';position:absolute;left:-18px;top:4px;
+  width:10px;height:10px;
+  background:var(--col-accent);border-radius:50%;
+  border:2px solid #fff;box-shadow:0 0 0 1.5px var(--col-accent);
+}
+.timeline-month{
+  font-size:7pt;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--col-gold);margin-bottom:2px;
+}
+.timeline-title{font-weight:700;color:var(--col-dark);font-size:9pt;margin-bottom:3px;}
+.timeline-desc{font-size:8pt;color:var(--col-muted);}
+
+/* ── RISK ────────────────────────────────────────── */
+.risk-high{color:#c0392b;font-weight:700;}
+.risk-med{color:#d68910;font-weight:700;}
+.risk-low{color:#27ae60;font-weight:700;}
+
+/* ── PARTNER CARDS ───────────────────────────────── */
+.partner-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0;}
+.partner-card{border:1px solid var(--col-border);overflow:hidden;}
+.partner-card-header{
+  padding:8px 14px;font-size:6.5pt;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;color:#fff;
+}
+.ph-header{background:#0038a8;}
+.co-header{background:var(--col-mid);}
+.partner-card-body{padding:12px 14px;background:#fff;}
+.partner-name{font-size:10pt;font-weight:800;color:var(--col-dark);margin-bottom:3px;}
+.partner-title{font-size:7.5pt;color:var(--col-muted);font-style:italic;margin-bottom:8px;}
+
+/* ── PAGE FOOTER ─────────────────────────────────── */
+.page-footer{
+  margin-top:28px;padding-top:8px;
+  border-top:1px solid var(--col-border);
+  display:flex;justify-content:space-between;
+  font-size:7pt;color:var(--col-muted);font-weight:500;
+}
+
+/* ── CONFIDENTIAL BANNER ──────────────────────────── */
+.confidential-banner{
+  background:var(--col-bg2);
+  border-radius:0;
+  padding:5px 14px;
+  font-size:7pt;color:var(--col-muted);
+  text-align:center;letter-spacing:1px;
+  text-transform:uppercase;margin-bottom:22px;font-weight:600;
+}
+
+/* ── SCORE ANNOTATION ────────────────────────────── */
+.score-note{
+  display:inline-block;
+  font-size:6.5pt;
+  font-weight:600;
+  font-style:italic;
+  color:#fff;
+  background:#131313;
+  padding:1px 6px 2px;
+  margin-left:5px;
+  vertical-align:middle;
+  line-height:1.4;
+  letter-spacing:0.2px;
+}
+/* ── PRINT BUTTON (screen only) ───────────────────── */
+.print-btn{
+  position:fixed;bottom:24px;right:24px;
+  background:#131313;color:#fff;
+  font-family:'Montserrat',sans-serif;
+  font-size:8pt;font-weight:700;letter-spacing:1px;
+  text-transform:uppercase;
+  padding:10px 20px;border:none;cursor:pointer;
+  border-radius:0;z-index:999;
+}
+.print-btn:hover{background:var(--col-mid);}
+@media print{.print-btn{display:none;}}
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+
+<!-- ══════════════════════════════════════════════════
+     COVER
+══════════════════════════════════════════════════ -->
+<div class="cover">
+  <div class="cover-flags">
+    <div class="flag-block">
+      <img class="flag-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/960px-Flag_of_Colombia.svg.png" alt="Flag of Colombia"/>
+      <div class="flag-label">Colombia</div>
+    </div>
+    <div class="flag-connector">&#8596;</div>
+    <div class="flag-block">
+      <img class="flag-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Flag_of_the_Philippines.svg/960px-Flag_of_the_Philippines.svg.png" alt="Flag of the Philippines"/>
+      <div class="flag-label">Philippines</div>
+    </div>
+  </div>
+
+  <div class="cover-eyebrow">Joint Venture Project Proposal</div>
+  <div class="cover-title">
+    Elevating Philippine<br/>
+    <span>Liberica &amp; Excelsa</span><br/>
+    to Global Specialty Markets
+  </div>
+  <div class="cover-subtitle">
+    A Colombia–Philippines Strategic Partnership for the Development of Precision Fermentation, IoT-Enabled Post-Harvest Technology, and International Market Positioning of Rare Coffee Species
+  </div>
+  <div class="cover-rule"></div>
+
+  <div class="cover-partners">
+    <div class="cover-partner">
+      <div class="cover-partner-role">Colombian Technical Lead</div>
+      <div class="cover-partner-name">Javier Eduardo Chacón</div>
+      <div class="cover-partner-detail">Specialty Processes &amp; IoT/AI Post-Harvest Systems · Huila, Colombia</div>
+    </div>
+    <div class="cover-sep">|</div>
+    <div class="cover-partner">
+      <div class="cover-partner-role">Philippine Initiating Partners</div>
+      <div class="cover-partner-name">Pablito M. Villegas &amp; Pacita Juan</div>
+      <div class="cover-partner-detail">Batangas Liberica / Excelsa Coffee Sector · Philippines</div>
+    </div>
+  </div>
+
+  <div class="cover-footer">
+    BATANGAS · LIPA · MALVAR · CAVITE &nbsp;|&nbsp; CONFIDENTIAL — FOR AUTHORIZED REVIEW ONLY &nbsp;|&nbsp; 2026
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     TABLE OF CONTENTS
+══════════════════════════════════════════════════ -->
+<div class="toc-page">
+  <div class="toc-head">Table of Contents</div>
+  <div class="toc-rule"></div>
+  <div class="toc-entry major"><span class="toc-num">01</span>Executive Summary</div>
+  <div class="toc-entry major"><span class="toc-num">02</span>Strategic Context &amp; Industry Opportunity</div>
+  <div class="toc-entry major"><span class="toc-num">03</span>Project Objectives</div>
+  <div class="toc-entry major"><span class="toc-num">04</span>Scope of Work</div>
+  <div class="toc-entry minor"><span class="toc-num"></span>Phase A · Pre-Production Assessment</div>
+  <div class="toc-entry minor"><span class="toc-num"></span>Phase B · Production Optimization</div>
+  <div class="toc-entry minor"><span class="toc-num"></span>Phase C · Post-Harvest Technology Transfer &amp; IoT Integration</div>
+  <div class="toc-entry minor"><span class="toc-num"></span>Phase D · Quality Assurance &amp; Sensory Development</div>
+  <div class="toc-entry minor"><span class="toc-num"></span>Phase E · Capacity Building &amp; Training</div>
+  <div class="toc-entry minor"><span class="toc-num"></span>Phase F · Domestic Market Validation</div>
+  <div class="toc-entry minor"><span class="toc-num"></span>Phase G · International Positioning Strategy</div>
+  <div class="toc-entry major"><span class="toc-num">05</span>Governance Structure</div>
+  <div class="toc-entry major"><span class="toc-num">06</span>Human Resources &amp; Personnel</div>
+  <div class="toc-entry major"><span class="toc-num">07</span>Infrastructure &amp; Equipment Requirements</div>
+  <div class="toc-entry major"><span class="toc-num">08</span>Travel &amp; Deployment Costs</div>
+  <div class="toc-entry major"><span class="toc-num">09</span>Research &amp; Development Budget</div>
+  <div class="toc-entry major"><span class="toc-num">10</span>Marketing &amp; Promotion Budget</div>
+  <div class="toc-entry major"><span class="toc-num">11</span>Investment Schedule &amp; Budget Table</div>
+  <div class="toc-entry major"><span class="toc-num">12</span>Timeline &amp; Milestones</div>
+  <div class="toc-entry major"><span class="toc-num">13</span>KPIs &amp; Success Metrics</div>
+  <div class="toc-entry major"><span class="toc-num">14</span>Risk Assessment &amp; Mitigation</div>
+  <div class="toc-entry major"><span class="toc-num">15</span>Long-Term Vision</div>
+  <div class="toc-entry major"><span class="toc-num">16</span>Annex Suggestions</div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     01 — EXECUTIVE SUMMARY
+══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="confidential-banner">Confidential — For Authorized Review Only</div>
+
+  <div class="section-header">
+    <div class="section-number">01</div>
+    <div>
+      <div class="section-eyebrow">Overview</div>
+      <div class="section-title">Executive Summary</div>
+    </div>
+  </div>
+
+  <p>This proposal outlines a structured two-year joint venture between Colombian specialty coffee technologist <strong>Javier Eduardo Chacón</strong> (Huila, Colombia) and Philippine coffee industry leaders <strong>Pablito M. Villegas</strong> and <strong>Pacita Juan</strong>, aimed at transforming Batangas-region <em>Coffea liberica</em> (Barako) and <em>Coffea excelsa</em> into internationally competitive specialty coffee origins.</p>
+  <p>The Philippines holds one of the world's most distinctive coffee heritages — a country where Liberica and Excelsa coffees represent a cultural identity found nowhere else at commercial scale. Yet this heritage remains largely invisible to international specialty markets. The gap is not one of genetics or terroir; it is one of post-harvest precision, process standardization, and market positioning infrastructure.</p>
+  <p>Colombia, through decades of research and field-level innovation, has developed some of the world's most advanced post-harvest methodologies — from controlled anaerobic fermentation and precision honey processing to IoT-enabled fermentation monitoring and AI-assisted process optimization. This initiative brings those capabilities directly to Philippine Liberica and Excelsa, with the express goal of creating a globally recognized specialty origin from one of the world's rarest coffee species.</p>
+
+  <div class="callout no-break">
+    <div class="callout-title">Strategic Proposition</div>
+    <div class="callout-body">The combination of Colombia's technology leadership in post-harvest science and the Philippines' unparalleled biodiversity in rare coffee species represents a unique, globally differentiated specialty coffee development opportunity — one that, if executed correctly, could position Philippine Liberica and Excelsa among the most sought-after origins in international specialty coffee.</div>
+  </div>
+
+  <p>This initiative is structured in three investment phases spanning 24 months, designed to allow staged funding commitments aligned with verifiable deliverables. Phase 1 (Foundation &amp; Pilot) establishes the technical and operational infrastructure. Phase 2 (Scale &amp; Training) expands the implementation to a broader producer network and builds local technical capacity. Phase 3 (Commercialization) prepares export-ready lots, develops market positioning assets, and facilitates access to international specialty coffee channels.</p>
+
+  <div class="stat-grid no-break">
+    <div class="stat-card"><div class="stat-value">USD 260K</div><div class="stat-label">Total Investment</div></div>
+    <div class="stat-card"><div class="stat-value">24 Mo.</div><div class="stat-label">Implementation</div></div>
+    <div class="stat-card"><div class="stat-value">3</div><div class="stat-label">Phases</div></div>
+    <div class="stat-card"><div class="stat-value">Batangas</div><div class="stat-label">Primary Region</div></div>
+  </div>
+
+  <h2>Partnership Overview</h2>
+  <div class="partner-grid no-break">
+    <div class="partner-card">
+      <div class="partner-card-header co-header">Colombian Technical Partner</div>
+      <div class="partner-card-body">
+        <div class="partner-name">Javier Eduardo Chacón</div>
+        <div class="partner-title">Independent Specialist · Specialty Coffee Processes &amp; IoT/AI Post-Harvest Systems · Huila, Colombia</div>
+        <p style="font-size:8pt;color:#444;margin:0;">Javier brings deep applied expertise in precision fermentation design, controlled processing protocols, and — critically — the integration of IoT sensor systems and AI-assisted data analysis for real-time post-harvest monitoring and optimization. His work in Huila represents the cutting edge of data-driven post-harvest science applied at the farm level.</p>
+      </div>
+    </div>
+    <div class="partner-card">
+      <div class="partner-card-header ph-header">Philippine Initiating Partners</div>
+      <div class="partner-card-body">
+        <div class="partner-name">Pablito M. Villegas &amp; Pacita Juan</div>
+        <div class="partner-title">Philippine Coffee Industry Leaders · Batangas Region</div>
+        <p style="font-size:8pt;color:#444;margin:0;">Pablito and Pacita bring deep roots in the Philippine coffee industry — from producer networks and processing infrastructure to government relationships and industry board connections. Their combined networks span Batangas producers, national coffee bodies, trade channels, and export-oriented private sector stakeholders.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>High-Level Goals</h2>
+  <ul>
+    <li>Establish a replicable, data-driven post-harvest technology system for Philippine Liberica and Excelsa, anchored in Colombian fermentation science and IoT-enabled process monitoring</li>
+    <li>Produce a minimum of 15 internationally submittable specialty-grade pilot lots within the first 18 months</li>
+    <li>Build permanent local technical capacity through producer training, technician certification, and locally owned Standard Operating Procedures</li>
+    <li>Validate product quality and consumer acceptance across Manila, Cebu, and Davao domestic markets</li>
+    <li>Position Philippine Liberica and Excelsa as a globally recognized specialty origin by Month 24</li>
+  </ul>
+
+  <div class="page-footer">
+    <span>Colombia–Philippines JV · Liberica &amp; Excelsa Specialty Coffee Development</span>
+    <span>Section 01 · Executive Summary</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     02 — STRATEGIC CONTEXT
+══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">02</div>
+    <div>
+      <div class="section-eyebrow">Market &amp; Industry Analysis</div>
+      <div class="section-title">Strategic Context &amp; Industry Opportunity</div>
+    </div>
+  </div>
+
+  <h2>Global Specialty Coffee Trends</h2>
+  <p>The global specialty coffee market has undergone a structural transformation over the past decade. Consumers — particularly in North America, Europe, Australia, Japan, South Korea, and the Middle East — are actively seeking origin differentiation, processing transparency, and sensory complexity beyond what mainstream Arabica can offer. The Third Wave has matured, and a Fourth Wave characterized by experimental processing, rare species, and traceability-driven narratives is now the frontier of premium positioning.</p>
+  <p>In this context, <em>Coffea liberica</em> and <em>Coffea excelsa</em> occupy an extraordinary position. They are, by definition, rare at the level of global supply. Unlike Arabica — cultivated on nearly every continent — commercially available Liberica is produced almost exclusively in the Philippines and limited areas of West Africa. No other country has the combination of scale, heritage, and institutional knowledge to develop Liberica and Excelsa as a specialty export origin.</p>
+
+  <h2>Rising Interest in Rare Coffee Species</h2>
+  <p>Specialty roasters and buyers in key import markets are increasingly vocal about their interest in non-Arabica species. The success of <em>Coffea stenophylla</em> revival projects, the Robusta fine-grade movement, and academic publications on climate-resilient coffee species have all contributed to growing buyer appetite for Liberica and Excelsa. Several prominent international specialty roasters have publicly expressed interest in sourcing commercially viable, traceable, high-quality Liberica lots — with no reliable supply currently available at the volumes or quality levels they require.</p>
+
+  <div class="callout no-break">
+    <div class="callout-title">Market Gap</div>
+    <div class="callout-body">International specialty buyers are actively seeking Liberica and Excelsa lots. The absence of traceable, precision-processed, export-ready Philippine specialty Liberica in the market is not a demand problem — it is a supply and quality infrastructure problem. This initiative addresses that gap directly.</div>
+  </div>
+
+  <h2>Climate Resilience Advantages of Liberica</h2>
+  <p><em>Coffea liberica</em> is inherently more tolerant of heat, humidity, and lower altitudes than Arabica — characteristics of increasing strategic importance as climate change compresses Arabica's viable growing zones globally. The FAO and CGIAR have flagged Liberica as a priority species for climate-resilient coffee production in tropical lowland regions. Positioning Philippine Liberica at the intersection of climate resilience and specialty quality is a contribution to the global coffee sector's long-term sustainability agenda.</p>
+
+  <h2>Philippine Coffee Heritage and Positioning</h2>
+  <p>The Philippines is one of the few countries in the world to produce all four commercially recognized coffee species: Arabica, Robusta, Liberica (Barako), and Excelsa. Batangas province — and specifically the municipalities of Malvar, Lipa, and Santo Tomas — has been the historic heartland of Barako cultivation, with generational farming families maintaining old-growth trees that represent irreplaceable genetic and cultural heritage.</p>
+  <p>Despite this extraordinary asset, Philippine specialty coffee exports remain negligible compared to Vietnam, Indonesia, or Papua New Guinea. The primary constraint is not production capacity — it is post-harvest technology, quality consistency, and market access infrastructure. This initiative is designed to resolve precisely these constraints.</p>
+
+  <h2>Market Differentiation Opportunities</h2>
+  <ul>
+    <li><strong>Species rarity:</strong> True commercial Liberica at specialty grade is essentially unavailable internationally</li>
+    <li><strong>Processing innovation:</strong> IoT-monitored fermentation processes applied to Liberica create unique, verifiable flavor profiles</li>
+    <li><strong>Origin narrative:</strong> Batangas Barako heritage, combined with Colombian fermentation science, creates a compelling cross-cultural origin story</li>
+    <li><strong>Traceability:</strong> IoT data logging enables lot-level traceability — a growing requirement for premium international buyers</li>
+    <li><strong>Climate positioning:</strong> Alignment with specialty coffee's growing interest in climate-resilient species</li>
+  </ul>
+
+  <h2>Export Potential</h2>
+  <p>Conservative projections for a fully developed Philippine specialty Liberica export program suggest achievable FOB premiums of USD 8–15 per kilogram above conventional green coffee prices within 36 months of market entry. With Batangas alone estimated to have 300,000+ productive Liberica trees, even a 5% transition to specialty-grade processing represents a commercially meaningful supply base for international buyers.</p>
+
+  <div class="page-footer">
+    <span>Colombia–Philippines JV · Liberica &amp; Excelsa Specialty Coffee Development</span>
+    <span>Section 02 · Strategic Context</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     03 — OBJECTIVES
+══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">03</div>
+    <div>
+      <div class="section-eyebrow">Goals &amp; Outcomes</div>
+      <div class="section-title">Project Objectives</div>
+    </div>
+  </div>
+
+  <h2>Primary Objective</h2>
+  <div class="callout no-break">
+    <div class="callout-title">Primary Objective</div>
+    <div class="callout-body">To develop a scientifically grounded, technologically enabled, and commercially viable specialty coffee production system for Philippine <em>Coffea liberica</em> and <em>Coffea excelsa</em> in the Batangas region — using Colombian precision fermentation methodologies, IoT-based post-harvest monitoring, and structured market development — positioning the Philippines as a recognized global origin for rare-species specialty coffee within 24 months.</div>
+  </div>
+
+  <h2>Secondary Objectives</h2>
+  <ol>
+    <li><strong>Technology Transfer:</strong> Transfer Colombian post-harvest science — including controlled anaerobic fermentation, honey and natural processing optimization, and real-time IoT monitoring — to Philippine processing sites, adapted specifically for Liberica and Excelsa physiological characteristics</li>
+    <li><strong>Capacity Building:</strong> Establish a local corps of trained post-harvest technicians, producer-level quality leads, and sensory evaluation personnel capable of sustaining and expanding the program independently after the project's conclusion</li>
+    <li><strong>Pilot Lot Development:</strong> Produce a minimum of 15 differentiated specialty-grade pilot lots — each with full documentation, sensory panel scores <span class="score-note">&#9888; SCA-equivalent methodology; Liberica &amp; Excelsa are not formally SCA-evaluated</span>, fermentation data, and traceability records — suitable for international buyer sampling and evaluation</li>
+    <li><strong>Domestic Market Validation:</strong> Conduct structured consumer and trade validation across Manila, Cebu, and Davao markets to establish baseline price acceptance, flavor preference data, and roaster engagement</li>
+    <li><strong>International Positioning:</strong> Develop a market-ready origin identity, exportable sample inventory, and institutional relationships with international specialty coffee buyers and exhibition platforms by project Month 20</li>
+    <li><strong>Data and Knowledge Foundation:</strong> Establish fermentation protocol documentation, IoT dataset libraries, and flavor mapping records as foundational operational assets of the joint venture, enabling future licensing, research partnerships, and brand development</li>
+  </ol>
+
+  <h2>Measurable Outcomes</h2>
+  <table class="no-break">
+    <thead><tr><th>Outcome Indicator</th><th>Baseline</th><th>Target (Month 24)</th></tr></thead>
+    <tbody>
+      <tr><td>Specialty-grade pilot lots produced</td><td>0</td><td>&#8805; 15 documented lots</td></tr>
+      <tr><td>Sensory panel score (selected lots) <span class="score-note">&#9888; Not SCA-standard — scored by equivalent panel of North American specialty buyers &amp; Liberica-trained cuppers</span></td><td>~78–80 pts equiv.</td><td>&#8805; 84 pts equiv. on best lots</td></tr>
+      <tr><td>Producers trained in post-harvest protocols</td><td>0</td><td>&#8805; 40 smallholder producers</td></tr>
+      <tr><td>Certified local post-harvest technicians</td><td>0</td><td>&#8805; 6 certified technicians</td></tr>
+      <tr><td>IoT-monitored fermentation batches logged</td><td>0</td><td>&#8805; 80 documented batches</td></tr>
+      <tr><td>International buyer sample shipments</td><td>0</td><td>&#8805; 12 targeted shipments</td></tr>
+      <tr><td>Domestic market tastings conducted</td><td>0</td><td>&#8805; 6 formal events</td></tr>
+      <tr><td>Export-ready lots (green, &gt;60 kg)</td><td>0</td><td>&#8805; 5 commercial-scale lots</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page-footer">
+    <span>Colombia–Philippines JV · Liberica &amp; Excelsa Specialty Coffee Development</span>
+    <span>Section 03 · Objectives</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     04 — SCOPE OF WORK
+══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">04</div>
+    <div>
+      <div class="section-eyebrow">Technical Work Plan</div>
+      <div class="section-title">Scope of Work</div>
+    </div>
+  </div>
+
+  <div class="phase-badge">Phase A · Pre-Production Assessment</div>
+  <h2>A. Pre-Production Assessment</h2>
+  <p>The foundation of any precision post-harvest program is an accurate understanding of the raw material. Before fermentation protocols are introduced, a systematic pre-production assessment will be conducted across selected farms in Malvar, Lipa, and Cavite municipalities of Batangas.</p>
+  <ul>
+    <li><strong>Farm Mapping &amp; Varietal Assessment:</strong> GPS-referenced mapping of all participating farms; identification and cataloging of Liberica and Excelsa tree populations, estimated age, density, and productive capacity</li>
+    <li><strong>Maturity Standards Development:</strong> Establishment of visual and Brix-meter-based cherry maturity benchmarks specific to Liberica and Excelsa physiological ripening stages</li>
+    <li><strong>Soil Diagnostics:</strong> Soil sampling and analysis (pH, organic matter, nitrogen, phosphorus, potassium, and micronutrients) at representative farm sites</li>
+    <li><strong>Pest and Disease Baseline:</strong> Assessment of Coffee Berry Borer, leaf rust, and other relevant pest/disease pressures affecting cherry quality at harvest</li>
+    <li><strong>Producer Selection and Engagement:</strong> Structured selection of 20–25 initial pilot producers based on tree quality, farm accessibility, water access, and willingness to adopt new protocols</li>
+  </ul>
+
+  <div class="phase-badge">Phase B · Production Optimization</div>
+  <h2>B. Production Optimization</h2>
+  <p>Selective harvesting is the single most impactful quality intervention at the farm level. This phase introduces harvesting protocols that shift the cultural practice from strip-picking to selective ripe-cherry picking.</p>
+  <ul>
+    <li><strong>Harvest Protocols:</strong> Introduction of selective picking standards with visual maturity guides, producer incentive structures for cherry quality, and field-level sorting training</li>
+    <li><strong>Traceability Systems:</strong> Lot identification systems using farm codes, harvest dates, and processing batch numbers — integrated with IoT data logging from post-harvest onwards</li>
+    <li><strong>Quality-Linked Incentive Design:</strong> Development of a quality premium payment framework that rewards producers for delivering properly matured, sorted cherry</li>
+    <li><strong>Field Data Collection:</strong> Tablet/mobile-based data entry systems for harvest volumes, cherry Brix readings, and delivery records</li>
+  </ul>
+
+  <div class="phase-badge">Phase C · Post-Harvest Technology Transfer &amp; IoT Integration</div>
+  <h2>C. Post-Harvest Technology Transfer &amp; IoT Integration</h2>
+  <p>This is the technical core of the initiative. The post-harvest phase introduces a suite of Colombian-origin processing methodologies adapted through systematic experimentation to the specific physiological characteristics of Liberica and Excelsa — all monitored and documented through an integrated bioreactor and IoT platform.</p>
+
+  <h3>Processing Systems</h3>
+  <ul>
+    <li><strong>Controlled Anaerobic Fermentation:</strong> CO2-purged hermetic bioreactor fermentation with time, temperature, pH, and Brix monitoring; customized protocols for Liberica's larger cherry and bean size</li>
+    <li><strong>Honey Processing Variants:</strong> Yellow, red, and black honey mucilage-retention drying protocols; drying bed design adapted for tropical humidity conditions</li>
+    <li><strong>Extended Natural Processing:</strong> Full-fruit drying with controlled temperature management; cherry selection standards for natural processing suitability</li>
+    <li><strong>Washed Processing Optimization:</strong> Fermentation tank timing calibrated with pH and temperature probes; mucilage removal standards and clean-water fermentation protocols</li>
+  </ul>
+
+  <h3>IoT-Enabled Monitoring System — Core Technological Differentiator</h3>
+  <div class="callout no-break">
+    <div class="callout-title">Integrated Bioreactor &amp; IoT Platform</div>
+    <div class="callout-body">The project deploys a turnkey integrated bioreactor and IoT monitoring system — the centerpiece of the technical infrastructure at approximately USD 90,000. This system includes pH probes, in-tank and ambient temperature sensors, CO2 and humidity sensors, IoT gateway networks, real-time dashboards, and an AI-assisted data analysis layer for fermentation curve pattern recognition and predictive endpoint detection. All IoT system hardware, software, data platforms, and associated intellectual property remain the sole property of the technology providers selected to execute the project. Fermentation records generated by the system are either jointly owned by the venture partners or made publicly available through co-publications with any academic institutions participating in the implementation.</div>
+  </div>
+  <ul>
+    <li><strong>Microbial Management:</strong> Inoculant trials with commercial yeast and bacterial cultures selected for Liberica compatibility; microbial diversity assessment through partner laboratory analysis</li>
+    <li><strong>SOP Library:</strong> Full Standard Operating Procedures documented for each processing method, calibrated through pilot experimentation and validated against sensory outcomes</li>
+  </ul>
+
+  <div class="phase-badge">Phase D · Quality Assurance &amp; Sensory Development</div>
+  <h2>D. Quality Assurance &amp; Sensory Development</h2>
+  <ul>
+    <li><strong>Cupping Lab Setup:</strong> Establishment of a fully equipped cupping facility at a central Batangas processing site, using SCA-equivalent infrastructure (grinders, brewing equipment, cupping bowls, and sensory reference library). <em>Note: Liberica and Excelsa are not formally evaluated under SCA protocols; all scoring will be conducted by a dedicated panel of North American specialty buyers and Liberica-trained cuppers using an SCA-equivalent scoring methodology adapted for these species.</em></li>
+    <li><strong>Sensory Panels:</strong> Structured cupping panels with trained evaluators at regular intervals; blind cupping protocols for objective lot evaluation</li>
+    <li><strong>Roasting Trials:</strong> Sample roasting profiles developed for Liberica and Excelsa using a drum sample roaster; roast curve documentation and correlation with sensory outcomes</li>
+    <li><strong>Green Coffee Grading:</strong> Physical defect analysis, moisture and water activity measurement, screen size assessment, and density profiling for all pilot lots</li>
+    <li><strong>Flavor Mapping:</strong> Development of a Batangas Liberica/Excelsa flavor lexicon based on cupping data; origin flavor identity documentation for marketing use</li>
+  </ul>
+
+  <div class="phase-badge">Phase E · Capacity Building &amp; Training</div>
+  <h2>E. Capacity Building &amp; Training</h2>
+  <p>Long-term impact requires that the knowledge and skills introduced through this initiative become permanently embedded in the local system — not dependent on continuous external technical support.</p>
+  <ul>
+    <li><strong>Producer Workshops:</strong> Monthly field workshops covering selective harvesting, cherry handling, fermentation basics, and quality awareness — conducted in Filipino/Tagalog with bilingual materials</li>
+    <li><strong>Technician Certification Program:</strong> A structured 80-hour curriculum for post-harvest operators covering fermentation science, IoT system operation, data logging, troubleshooting, and QA protocols</li>
+    <li><strong>Sensory Training:</strong> Basic Q-Grader-aligned sensory calibration for local staff and select producers; cupping protocols and defect identification training</li>
+    <li><strong>Training Manuals:</strong> Full bilingual (English/Filipino) training manual library covering all aspects of the program; designed for ongoing use after project completion</li>
+  </ul>
+
+  <div class="phase-badge">Phase F · Domestic Market Validation</div>
+  <h2>F. Domestic Market Validation</h2>
+  <ul>
+    <li><strong>Manila, Cebu, Davao Testing:</strong> Structured tasting events in each city, targeting specialty café owners, Q Graders, food and beverage professionals, and informed consumers</li>
+    <li><strong>Café Collaboration Program:</strong> Placement of pilot lot samples with 8–10 leading specialty cafés for on-menu trials and staff/customer feedback collection</li>
+    <li><strong>Blind Cupping Events:</strong> Competitive blind cuppings with Barako benchmarks and international references — generating objective comparative data</li>
+    <li><strong>Price Acceptance Studies:</strong> Consumer willingness-to-pay surveys for specialty-positioned Philippine Liberica at various price points</li>
+    <li><strong>Roasting Profile Adaptation:</strong> Collaboration with Manila and Cebu specialty roasters to develop locally optimized roast profiles</li>
+  </ul>
+
+  <div class="phase-badge">Phase G · International Positioning Strategy</div>
+  <h2>G. International Positioning Strategy</h2>
+  <ul>
+    <li><strong>Export Readiness:</strong> Green coffee preparation, moisture stabilization, and export-standard packaging for at least 5 commercial-scale lots (60–100 kg each)</li>
+    <li><strong>Sample Preparation and Distribution:</strong> Professionally packaged sample kits with full origin documentation, fermentation data, and cupping notes — shipped to 12+ targeted international specialty roasters and importers</li>
+    <li><strong>Branding and Storytelling:</strong> Development of the origin identity: Batangas Liberica/Excelsa visual identity, origin story, producer profiles, and processing narrative</li>
+    <li><strong>Exhibition Readiness:</strong> Preparation of booth materials, sample lots, and team representation for at least one international specialty coffee event (SCA Expo, World of Coffee, or equivalent)</li>
+  </ul>
+
+  <div class="page-footer">
+    <span>Colombia–Philippines JV · Liberica &amp; Excelsa Specialty Coffee Development</span>
+    <span>Section 04 · Scope of Work</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     05 — GOVERNANCE
+══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">05</div>
+    <div>
+      <div class="section-eyebrow">Partnership Structure</div>
+      <div class="section-title">Governance Structure</div>
+    </div>
+  </div>
+
+  <h2>Joint Venture Framework</h2>
+  <p>The project operates under a formal Joint Venture Agreement (JVA) to be executed prior to the initiation of Phase 1 activities. The JVA defines the respective responsibilities, resource contributions, decision-making authorities, IP ownership arrangements, and commercialization rights of each party.</p>
+
+  <h2>Responsibilities by Party</h2>
+  <table class="no-break">
+    <thead><tr><th>Domain</th><th>Colombian Technical Partner</th><th>Philippine Partners</th></tr></thead>
+    <tbody>
+      <tr><td class="td-bold">Technical Direction</td><td>Lead — fermentation design, IoT system oversight, SOP development, quality system</td><td>Local adaptation input, field feedback integration</td></tr>
+      <tr><td class="td-bold">Producer Relations</td><td>Technical training support</td><td>Lead — producer recruitment, trust-building, field coordination</td></tr>
+      <tr><td class="td-bold">Government &amp; Institutional</td><td>International credentialing support</td><td>Lead — DA, DTI, PCAF, BAR, LGU engagement</td></tr>
+      <tr><td class="td-bold">Equipment &amp; Logistics</td><td>Specification, procurement support</td><td>Lead — in-country procurement, customs, transport</td></tr>
+      <tr><td class="td-bold">Market Development</td><td>International buyer network, exhibition representation</td><td>Domestic market access, Philippine trade channels</td></tr>
+      <tr><td class="td-bold">Financial Management</td><td>Fee schedule adherence, expense reporting</td><td>Fund administration, local disbursements, financial reporting</td></tr>
+      <tr><td class="td-bold">Reporting</td><td>Technical progress reports (monthly)</td><td>Financial and operational reports (monthly); consolidated (quarterly)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Reporting Structure</h2>
+  <p>A Joint Management Committee (JMC) — comprising the three named partners and one independent advisor where applicable — meets monthly (virtually) and quarterly (in-person in the Philippines) to review progress, address bottlenecks, approve budget adjustments, and confirm phase transition decisions.</p>
+
+  <h2>IP and Data Ownership</h2>
+  <ul>
+    <li><strong>IoT System &amp; Technology Platform:</strong> All hardware, software, data platforms, algorithms, and associated intellectual property of the bioreactor and IoT monitoring system remain the sole property of the technology providers selected to execute the project. The joint venture holds a use license for the duration of the program</li>
+    <li><strong>Fermentation Records and Process Data:</strong> Records generated through the IoT system are either jointly owned by the venture partners or made publicly available through co-publications with any academic institutions participating in the implementation, as agreed on a case-by-case basis</li>
+    <li><strong>SOPs and Training Materials:</strong> Jointly owned operational documentation; bilingual versions may be contributed to Philippine government agricultural extension programs upon project conclusion</li>
+    <li><strong>Flavor Maps and Sensory Data:</strong> Jointly owned; may be shared with buyers and researchers under NDA during the commercialization phase</li>
+    <li><strong>Origin Brand Identity:</strong> Philippine-owned; Colombian team retains attribution rights as technical partner</li>
+  </ul>
+
+  <h2>Commercialization Rights</h2>
+  <p>Export commercialization of specialty lots produced under the program is the primary right of the Philippine partners and any future export entity established under the JV. The Colombian partner retains the right to reference the program in technical publications and international presentations, subject to prior notification and accuracy review. Revenue sharing arrangements for any branded product lines or international exhibition activities will be defined in the JVA commercial schedules.</p>
+
+  <div class="page-footer">
+    <span>Colombia–Philippines JV · Liberica &amp; Excelsa Specialty Coffee Development</span>
+    <span>Section 05 · Governance</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     06 — HUMAN RESOURCES
+══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">06</div>
+    <div>
+      <div class="section-eyebrow">Staffing Plan</div>
+      <div class="section-title">Human Resources &amp; Personnel</div>
+    </div>
+  </div>
+
+  <p>The project requires a carefully structured team combining Colombian technical expertise with Philippine field, administrative, and market development capacity. Personnel costs represent the largest budget component, reflecting the knowledge-intensive nature of this work.</p>
+
+  <table>
+    <thead><tr><th>Role</th><th>Purpose</th><th>Duration</th><th>Est. Cost (USD)</th></tr></thead>
+    <tbody>
+      <tr class="td-cat"><td colspan="4">Colombian Technical Team</td></tr>
+      <tr><td class="td-bold">Lead Technical Consultant (J.E. Chacón)</td><td>Overall technical direction; fermentation system design; IoT system oversight; SOP authorship; quality system; international market representation</td><td>24 mo. (part-time remote + 4 field deployments)</td><td class="td-num">$36,000</td></tr>
+      <tr><td class="td-bold">Fermentation Specialist</td><td>On-site fermentation protocol implementation; batch monitoring; process troubleshooting; technician supervision during pilot phase</td><td>12 mo. (6 on-site + 6 remote)</td><td class="td-num">$18,000</td></tr>
+      <tr><td class="td-bold">IoT/Data Systems Technician</td><td>IoT sensor installation, calibration, and maintenance; data platform configuration; dashboard development; field connectivity</td><td>8 mo. (2 deployments + remote)</td><td class="td-num">$11,000</td></tr>
+      <tr class="td-cat"><td colspan="4">Philippine Field &amp; Operations Team</td></tr>
+      <tr><td class="td-bold">Project Field Coordinator</td><td>Day-to-day field operations management; producer liaison; logistics coordination; resource management</td><td>24 mo. full-time</td><td class="td-num">$14,400</td></tr>
+      <tr><td class="td-bold">Local Agronomist / Farm Advisor</td><td>Pre-production assessment; farm mapping; soil diagnostic coordination; harvest protocol training in field</td><td>18 mo. part-time</td><td class="td-num">$9,000</td></tr>
+      <tr><td class="td-bold">Post-Harvest Technicians (2)</td><td>Day-to-day operation of fermentation stations; data entry and sensor monitoring; lot handling and drying management</td><td>20 mo. each</td><td class="td-num">$12,000</td></tr>
+      <tr><td class="td-bold">Sensory Analyst / Q-Grader</td><td>Cupping lab management; sensory panel facilitation; lot scoring; flavor mapping; roaster liaison</td><td>20 mo. part-time</td><td class="td-num">$8,400</td></tr>
+      <tr><td class="td-bold">Producer Coordinators (2)</td><td>Direct producer relationship management; harvest scheduling; cherry collection logistics; field training facilitation</td><td>18 mo. each</td><td class="td-num">$9,000</td></tr>
+      <tr class="td-cat"><td colspan="4">Support Personnel</td></tr>
+      <tr><td class="td-bold">Bilingual Interpreter / Communications Lead</td><td>Colombian–Philippine communication; training material translation (Spanish/English/Filipino); documentation support</td><td>12 mo. part-time</td><td class="td-num">$4,500</td></tr>
+      <tr><td class="td-bold">Finance and Admin Officer</td><td>Budget tracking; vendor management; payroll; reporting; compliance documentation</td><td>24 mo. part-time</td><td class="td-num">$7,200</td></tr>
+      <tr><td class="td-bold">Documentation / Media Specialist</td><td>Photo and video documentation; progress reporting; market materials production; brand development content</td><td>12 mo. part-time</td><td class="td-num">$4,500</td></tr>
+      <tr class="td-total"><td colspan="3" class="td-bold">Total Personnel Costs</td><td class="td-num">$134,000</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout no-break">
+    <div class="callout-title">Note on Personnel Structure</div>
+    <div class="callout-body">Colombian team compensation reflects international consultant standards. Philippine team compensation is calibrated to prevailing agricultural development project rates, while remaining competitive for qualified professionals. Specific rates are negotiable within the total budget envelope.</div>
+  </div>
+
+  <div class="page-footer">
+    <span>Colombia–Philippines JV · Liberica &amp; Excelsa Specialty Coffee Development</span>
+    <span>Section 06 · Human Resources</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     07 — INFRASTRUCTURE & EQUIPMENT
+══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">07</div>
+    <div>
+      <div class="section-eyebrow">Technical Assets</div>
+      <div class="section-title">Infrastructure &amp; Equipment Requirements</div>
+    </div>
+  </div>
+
+  <p>The project establishes two primary processing and quality control sites in the Batangas region, supported by mobile field equipment. The integrated bioreactor and IoT platform represents the centerpiece capital investment. All supporting equipment procured under the project becomes the property of the Philippine joint venture entity upon project completion.</p>
+
+  <table>
+    <thead><tr><th>Category</th><th>Item</th><th>Qty</th><th>Est. Unit</th><th>Total (USD)</th></tr></thead>
+    <tbody>
+      <tr class="td-cat"><td colspan="5">Integrated Bioreactor &amp; IoT System (Turnkey)</td></tr>
+      <tr><td></td><td>Bioreactor units + IoT sensors + data platform + installation + commissioning (full system, technology provider-owned IP)</td><td>1 system</td><td class="td-num">—</td><td class="td-num">$90,000</td></tr>
+      <tr class="td-cat"><td colspan="5">Fermentation Support Infrastructure</td></tr>
+      <tr><td></td><td>Food-grade hermetic fermentation tanks (200L) — supplemental</td><td>4</td><td class="td-num">$350</td><td class="td-num">$1,400</td></tr>
+      <tr><td></td><td>Water supply tanks &amp; plumbing fixtures</td><td>1 set</td><td class="td-num">$700</td><td class="td-num">$700</td></tr>
+      <tr class="td-cat"><td colspan="5">Drying &amp; Post-Processing</td></tr>
+      <tr><td></td><td>Raised African drying beds (6m × 1.2m)</td><td>10</td><td class="td-num">$280</td><td class="td-num">$2,800</td></tr>
+      <tr><td></td><td>Shade cloth / greenhouse drying tunnel</td><td>2</td><td class="td-num">$600</td><td class="td-num">$1,200</td></tr>
+      <tr><td></td><td>Grain moisture meter (professional)</td><td>3</td><td class="td-num">$200</td><td class="td-num">$600</td></tr>
+      <tr><td></td><td>Water activity meter (Aqualab or equivalent)</td><td>1</td><td class="td-num">$1,800</td><td class="td-num">$1,800</td></tr>
+      <tr class="td-cat"><td colspan="5">Quality &amp; Sensory Lab</td></tr>
+      <tr><td></td><td>Sample drum roaster (Ikawa Pro or equivalent)</td><td>1</td><td class="td-num">$2,200</td><td class="td-num">$2,200</td></tr>
+      <tr><td></td><td>Commercial grinder (cupping grade)</td><td>2</td><td class="td-num">$650</td><td class="td-num">$1,300</td></tr>
+      <tr><td></td><td>Cupping bowls, spoons, and accessories (set)</td><td>3</td><td class="td-num">$180</td><td class="td-num">$540</td></tr>
+      <tr><td></td><td>Digital scales (0.1g precision)</td><td>4</td><td class="td-num">$80</td><td class="td-num">$320</td></tr>
+      <tr><td></td><td>Refractometers (Brix/TDS)</td><td>4</td><td class="td-num">$90</td><td class="td-num">$360</td></tr>
+      <tr class="td-cat"><td colspan="5">Computing &amp; Connectivity</td></tr>
+      <tr><td></td><td>Laptops / tablets for field data entry</td><td>5</td><td class="td-num">$600</td><td class="td-num">$3,000</td></tr>
+      <tr><td></td><td>Mobile internet / data SIMs (24 months)</td><td>5</td><td class="td-num">$240</td><td class="td-num">$1,200</td></tr>
+      <tr><td></td><td>Backup power (UPS + solar panel kit)</td><td>2</td><td class="td-num">$700</td><td class="td-num">$1,400</td></tr>
+      <tr class="td-cat"><td colspan="5">Packaging &amp; Logistics Materials</td></tr>
+      <tr><td></td><td>GrainPro / Ecotact hermetic bags (lot storage)</td><td>200</td><td class="td-num">$8</td><td class="td-num">$1,600</td></tr>
+      <tr><td></td><td>Export jute sacks and inner liner bags</td><td>100</td><td class="td-num">$6</td><td class="td-num">$600</td></tr>
+      <tr><td></td><td>Sample packaging (branded, 100g–250g)</td><td>500</td><td class="td-num">$1.80</td><td class="td-num">$900</td></tr>
+      <tr><td></td><td>Miscellaneous supplies &amp; consumables</td><td>—</td><td class="td-num">—</td><td class="td-num">$1,400</td></tr>
+      <tr class="td-total"><td colspan="4" class="td-bold">Total Infrastructure &amp; Equipment</td><td class="td-num">$113,120</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page-footer">
+    <span>Colombia–Philippines JV · Liberica &amp; Excelsa Specialty Coffee Development</span>
+    <span>Section 07 · Infrastructure &amp; Equipment</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     08–10
+══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">08</div>
+    <div>
+      <div class="section-eyebrow">Mobility &amp; Deployment</div>
+      <div class="section-title">Travel &amp; Deployment Costs</div>
+    </div>
+  </div>
+
+  <table class="no-break">
+    <thead><tr><th>Category</th><th>Description</th><th>Est. Cost (USD)</th></tr></thead>
+    <tbody>
+      <tr class="td-cat"><td colspan="3">International Travel (Colombia ↔ Philippines)</td></tr>
+      <tr><td></td><td>Round-trip flights × 4 deployments (Lead Consultant + Fermentation Specialist)</td><td class="td-num">$7,200</td></tr>
+      <tr><td></td><td>Accommodation in Batangas region (total field days)</td><td class="td-num">$4,000</td></tr>
+      <tr><td></td><td>Per diem allowances (field days, international staff)</td><td class="td-num">$2,800</td></tr>
+      <tr><td></td><td>Visa, immigration, and travel insurance</td><td class="td-num">$1,000</td></tr>
+      <tr class="td-cat"><td colspan="3">Equipment Shipping</td></tr>
+      <tr><td></td><td>IoT supplemental equipment shipment (air freight)</td><td class="td-num">$1,800</td></tr>
+      <tr><td></td><td>Customs clearance fees and brokerage</td><td class="td-num">$900</td></tr>
+      <tr class="td-cat"><td colspan="3">Domestic Philippine Travel</td></tr>
+      <tr><td></td><td>Manila–Batangas field transport (team, 24 months)</td><td class="td-num">$2,600</td></tr>
+      <tr><td></td><td>Market validation travel: Manila, Cebu, Davao</td><td class="td-num">$2,000</td></tr>
+      <tr><td></td><td>Project vehicle rental / fuel allowances</td><td class="td-num">$2,400</td></tr>
+      <tr class="td-cat"><td colspan="3">International Exhibition (Phase 3)</td></tr>
+      <tr><td></td><td>Exhibition registration &amp; booth costs</td><td class="td-num">$2,800</td></tr>
+      <tr><td></td><td>Team travel for international exhibition (2 persons)</td><td class="td-num">$3,500</td></tr>
+      <tr class="td-total"><td colspan="2" class="td-bold">Total Travel &amp; Deployment</td><td class="td-num">$31,000</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-header" style="margin-top:30px;">
+    <div class="section-number">09</div>
+    <div>
+      <div class="section-eyebrow">Science &amp; Experimentation</div>
+      <div class="section-title">Research &amp; Development Budget</div>
+    </div>
+  </div>
+
+  <table class="no-break">
+    <thead><tr><th>Item</th><th>Est. Cost (USD)</th></tr></thead>
+    <tbody>
+      <tr><td>Experimental fermentation batches (materials, consumables)</td><td class="td-num">$2,400</td></tr>
+      <tr><td>Microbial testing and laboratory analysis (external lab)</td><td class="td-num">$2,200</td></tr>
+      <tr><td>Soil and water analysis services</td><td class="td-num">$900</td></tr>
+      <tr><td>Sensory evaluation consumables and facilities</td><td class="td-num">$1,400</td></tr>
+      <tr><td>International sample shipments (12+ shipments)</td><td class="td-num">$2,800</td></tr>
+      <tr><td>Lab consumables (probes, reagents, calibration kits)</td><td class="td-num">$1,200</td></tr>
+      <tr><td>Data analysis software licenses</td><td class="td-num">$800</td></tr>
+      <tr><td>SOP documentation and printing</td><td class="td-num">$500</td></tr>
+      <tr class="td-total"><td class="td-bold">Total R&amp;D Budget</td><td class="td-num">$12,200</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-header" style="margin-top:30px;">
+    <div class="section-number">10</div>
+    <div>
+      <div class="section-eyebrow">Origin Identity &amp; Market Entry</div>
+      <div class="section-title">Marketing &amp; Promotion Budget</div>
+    </div>
+  </div>
+
+  <table class="no-break">
+    <thead><tr><th>Item</th><th>Est. Cost (USD)</th></tr></thead>
+    <tbody>
+      <tr><td>Origin brand identity design (logo, visual language, usage guide)</td><td class="td-num">$2,200</td></tr>
+      <tr><td>Packaging prototype design and production</td><td class="td-num">$1,800</td></tr>
+      <tr><td>Photography and video documentation (2 production days)</td><td class="td-num">$2,000</td></tr>
+      <tr><td>Domestic launch events (Manila, Cebu, Davao)</td><td class="td-num">$2,800</td></tr>
+      <tr><td>Exhibition materials (banners, printed collateral, display)</td><td class="td-num">$1,400</td></tr>
+      <tr><td>Digital presence (website, landing page)</td><td class="td-num">$1,000</td></tr>
+      <tr><td>Buyer pitch decks and export catalog production</td><td class="td-num">$700</td></tr>
+      <tr><td>Printed training and promotional materials</td><td class="td-num">$500</td></tr>
+      <tr class="td-total"><td class="td-bold">Total Marketing &amp; Promotion</td><td class="td-num">$12,400</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page-footer">
+    <span>Colombia–Philippines JV · Liberica &amp; Excelsa Specialty Coffee Development</span>
+    <span>Sections 08–10 · Travel / R&amp;D / Marketing</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     11 — BUDGET TABLE
+══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">11</div>
+    <div>
+      <div class="section-eyebrow">Financial Plan</div>
+      <div class="section-title">Investment Schedule &amp; Budget Summary</div>
+    </div>
+  </div>
+
+  <p>The project is structured across three investment phases, each aligned with a distinct set of deliverables and measurable milestones. This structure allows funding partners to commit to sequential tranches upon verification of prior-phase outcomes.</p>
+
+  <h2>Phased Investment Schedule</h2>
+  <table class="no-break">
+    <thead><tr><th>Phase</th><th>Period</th><th>Focus</th><th>USD</th><th>PHP *</th></tr></thead>
+    <tbody>
+      <tr>
+        <td class="td-bold">Phase 1<br/><span style="font-weight:400;font-size:7.5pt;">Foundation &amp; Pilot</span></td>
+        <td>Months 1–8</td>
+        <td>Pre-production assessment, bioreactor + IoT installation, first fermentation pilots, initial producer training</td>
+        <td class="td-num td-bold">$105,000</td>
+        <td class="td-num">PHP 5,880,000</td>
+      </tr>
+      <tr>
+        <td class="td-bold">Phase 2<br/><span style="font-weight:400;font-size:7.5pt;">Scale &amp; Training</span></td>
+        <td>Months 9–18</td>
+        <td>Full producer rollout, technician certification, domestic market validation, lot production scale-up</td>
+        <td class="td-num td-bold">$105,000</td>
+        <td class="td-num">PHP 5,880,000</td>
+      </tr>
+      <tr>
+        <td class="td-bold">Phase 3<br/><span style="font-weight:400;font-size:7.5pt;">Commercialization</span></td>
+        <td>Months 19–24</td>
+        <td>Export lot preparation, international buyer engagement, exhibition, origin brand launch</td>
+        <td class="td-num td-bold">$50,000</td>
+        <td class="td-num">PHP 2,800,000</td>
+      </tr>
+      <tr class="td-total">
+        <td colspan="3" class="td-bold">Total Project Investment</td>
+        <td class="td-num">$260,000</td>
+        <td class="td-num">PHP 14,560,000</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="font-size:7pt;color:var(--col-muted);">* PHP equivalent at USD 1 = PHP 56.00 (indicative). Actual conversion subject to prevailing exchange rates at time of disbursement.</p>
+
+  <h2>Consolidated Budget by Category</h2>
+  <table>
+    <thead><tr><th>Category</th><th>Subcategory</th><th>Ph. 1 (USD)</th><th>Ph. 2 (USD)</th><th>Ph. 3 (USD)</th><th>Total (USD)</th><th>Total (PHP)</th></tr></thead>
+    <tbody>
+      <tr class="td-cat"><td colspan="7">01 · Personnel</td></tr>
+      <tr><td></td><td>Colombian technical team</td><td class="td-num">$20,000</td><td class="td-num">$28,000</td><td class="td-num">$17,000</td><td class="td-num">$65,000</td><td class="td-num">PHP 3,640,000</td></tr>
+      <tr><td></td><td>Philippine field &amp; operations team</td><td class="td-num">$15,000</td><td class="td-num">$32,000</td><td class="td-num">$8,000</td><td class="td-num">$55,000</td><td class="td-num">PHP 3,080,000</td></tr>
+      <tr><td></td><td>Support staff</td><td class="td-num">$4,000</td><td class="td-num">$6,000</td><td class="td-num">$4,000</td><td class="td-num">$14,000</td><td class="td-num">PHP 784,000</td></tr>
+      <tr class="td-sub"><td></td><td>Personnel Subtotal</td><td class="td-num">$39,000</td><td class="td-num">$66,000</td><td class="td-num">$29,000</td><td class="td-num">$134,000</td><td class="td-num">PHP 7,504,000</td></tr>
+
+      <tr class="td-cat"><td colspan="7">02 · Infrastructure &amp; Equipment</td></tr>
+      <tr><td></td><td>Integrated bioreactor &amp; IoT system (turnkey)</td><td class="td-num">$90,000</td><td class="td-num">$0</td><td class="td-num">$0</td><td class="td-num">$90,000</td><td class="td-num">PHP 5,040,000</td></tr>
+      <tr><td></td><td>Supplemental fermentation infrastructure</td><td class="td-num">$2,100</td><td class="td-num">$0</td><td class="td-num">$0</td><td class="td-num">$2,100</td><td class="td-num">PHP 117,600</td></tr>
+      <tr><td></td><td>Drying &amp; milling equipment</td><td class="td-num">$6,400</td><td class="td-num">$0</td><td class="td-num">$0</td><td class="td-num">$6,400</td><td class="td-num">PHP 358,400</td></tr>
+      <tr><td></td><td>Quality &amp; sensory lab</td><td class="td-num">$4,720</td><td class="td-num">$0</td><td class="td-num">$0</td><td class="td-num">$4,720</td><td class="td-num">PHP 264,320</td></tr>
+      <tr><td></td><td>Computing, connectivity, packaging</td><td class="td-num">$5,600</td><td class="td-num">$2,000</td><td class="td-num">$2,300</td><td class="td-num">$9,900</td><td class="td-num">PHP 554,400</td></tr>
+      <tr class="td-sub"><td></td><td>Infra &amp; Equipment Subtotal</td><td class="td-num">$108,820</td><td class="td-num">$2,000</td><td class="td-num">$2,300</td><td class="td-num">$113,120</td><td class="td-num">PHP 6,334,720</td></tr>
+
+      <tr class="td-cat"><td colspan="7">03 · Travel &amp; Deployment</td></tr>
+      <tr><td></td><td>International flights, accommodation, per diem</td><td class="td-num">$7,500</td><td class="td-num">$5,000</td><td class="td-num">$3,000</td><td class="td-num">$15,500</td><td class="td-num">PHP 868,000</td></tr>
+      <tr><td></td><td>Equipment shipping &amp; customs</td><td class="td-num">$2,700</td><td class="td-num">$0</td><td class="td-num">$0</td><td class="td-num">$2,700</td><td class="td-num">PHP 151,200</td></tr>
+      <tr><td></td><td>Domestic Philippine transport</td><td class="td-num">$2,000</td><td class="td-num">$3,500</td><td class="td-num">$1,500</td><td class="td-num">$7,000</td><td class="td-num">PHP 392,000</td></tr>
+      <tr><td></td><td>Exhibition travel (Phase 3)</td><td class="td-num">$0</td><td class="td-num">$0</td><td class="td-num">$5,800</td><td class="td-num">$5,800</td><td class="td-num">PHP 324,800</td></tr>
+      <tr class="td-sub"><td></td><td>Travel Subtotal</td><td class="td-num">$12,200</td><td class="td-num">$8,500</td><td class="td-num">$10,300</td><td class="td-num">$31,000</td><td class="td-num">PHP 1,736,000</td></tr>
+
+      <tr class="td-cat"><td colspan="7">04 · Research &amp; Development</td></tr>
+      <tr><td></td><td>Experimental batches, lab analysis, sample shipments</td><td class="td-num">$4,200</td><td class="td-num">$5,600</td><td class="td-num">$2,400</td><td class="td-num">$12,200</td><td class="td-num">PHP 683,200</td></tr>
+
+      <tr class="td-cat"><td colspan="7">05 · Marketing &amp; Promotion</td></tr>
+      <tr><td></td><td>Brand identity, packaging, photo/video</td><td class="td-num">$0</td><td class="td-num">$6,000</td><td class="td-num">$0</td><td class="td-num">$6,000</td><td class="td-num">PHP 336,000</td></tr>
+      <tr><td></td><td>Events, exhibition materials, digital</td><td class="td-num">$0</td><td class="td-num">$3,200</td><td class="td-num">$3,200</td><td class="td-num">$6,400</td><td class="td-num">PHP 358,400</td></tr>
+      <tr class="td-sub"><td></td><td>Marketing Subtotal</td><td class="td-num">$0</td><td class="td-num">$9,200</td><td class="td-num">$3,200</td><td class="td-num">$12,400</td><td class="td-num">PHP 694,400</td></tr>
+
+      <tr class="td-cat"><td colspan="7">06 · Contingency</td></tr>
+      <tr><td></td><td>Operational contingency (~3% of total)</td><td class="td-num">$980</td><td class="td-num">$3,700</td><td class="td-num">$3,600</td><td class="td-num">$8,280</td><td class="td-num">PHP 463,680</td></tr>
+
+      <tr class="td-total">
+        <td colspan="2" class="td-bold">Grand Total</td>
+        <td class="td-num">$105,000</td>
+        <td class="td-num">$105,000</td>
+        <td class="td-num">$50,000</td>
+        <td class="td-num">$260,000</td>
+        <td class="td-num">PHP 14,560,000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="page-footer">
+    <span>Colombia–Philippines JV · Liberica &amp; Excelsa Specialty Coffee Development</span>
+    <span>Section 11 · Budget Summary</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     12 — TIMELINE
+══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">12</div>
+    <div>
+      <div class="section-eyebrow">Implementation Plan</div>
+      <div class="section-title">Timeline &amp; Milestones</div>
+    </div>
+  </div>
+
+  <div class="callout no-break">
+    <div class="callout-title">Timeline Overview</div>
+    <div class="callout-body">The 24-month program spans January 2026 through December 2026, with commercialization activities extending into early 2027 as needed. Phase transitions are conditional on defined milestone deliverables, ensuring each tranche is deployed with prior-phase accountability.</div>
+  </div>
+
+  <div class="phase-badge">Phase 1 · Foundation &amp; Pilot — USD 105,000 · Jan–Aug 2026</div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-month">Jan–Feb 2026</div>
+      <div class="timeline-title">Program Mobilization &amp; JV Formalization</div>
+      <div class="timeline-desc">JVA execution; Philippine team hiring; bioreactor system procurement and shipping initiation; producer identification; regulatory and permit processing for Colombian team deployment</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-month">Feb–Mar 2026</div>
+      <div class="timeline-title">Pre-Production Assessment</div>
+      <div class="timeline-desc">Farm mapping; varietal inventory; soil sampling; pest/disease baseline; cherry maturity benchmarking; final pilot producer selection (20–25 producers)</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-month">Mar–Apr 2026 · Javier Deployment 1</div>
+      <div class="timeline-title">Bioreactor &amp; IoT Installation + First Processing Pilots</div>
+      <div class="timeline-desc">Full bioreactor and IoT platform installation and commissioning at 2 primary sites; first fermentation pilot batches (washed, honey, anaerobic); initial producer workshops</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-month">May–Jun 2026</div>
+      <div class="timeline-title">Pilot Lot Processing &amp; Sensory Evaluation</div>
+      <div class="timeline-desc">4–6 pilot lots produced and cupped; cupping lab commissioning; first formal sensory panel; SOP drafting; IoT calibration refinement; producer feedback collection</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-month">Jul–Aug 2026</div>
+      <div class="timeline-title">Phase 1 Completion &amp; Review</div>
+      <div class="timeline-desc">Phase 1 technical report; investor/board review; protocol adjustments; Phase 2 operational plan finalization; first domestic sample distribution</div>
+    </div>
+  </div>
+
+  <div class="phase-badge">Phase 2 · Scale &amp; Training — USD 105,000 · Sep 2026–Jun 2027</div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-month">Sep–Oct 2026 · Javier Deployment 2</div>
+      <div class="timeline-title">Producer Rollout &amp; Technician Training Commencement</div>
+      <div class="timeline-desc">Expansion to full 40-producer cohort; technician certification program launch; scaled fermentation operations; additional monitoring deployment at new sites</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-month">Nov 2026–Feb 2027</div>
+      <div class="timeline-title">Peak Production &amp; Experimentation Season</div>
+      <div class="timeline-desc">Full-season processing operations; 8–10 differentiated pilot lots produced; blind cupping series; sensory data collection; ongoing technician training; domestic roaster engagement begins</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-month">Mar–Apr 2027 · Javier Deployment 3</div>
+      <div class="timeline-title">Domestic Market Validation Events</div>
+      <div class="timeline-desc">Manila, Cebu, Davao consumer tasting events; café collaboration program launch; blind cupping competitions; price acceptance surveys; roast profile collaboration</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-month">May–Jun 2027</div>
+      <div class="timeline-title">Technician Certification &amp; Knowledge Consolidation</div>
+      <div class="timeline-desc">Certification examinations for post-harvest technicians; SOP library finalization; training manual completion; Phase 2 report; Phase 3 planning</div>
+    </div>
+  </div>
+
+  <div class="phase-badge">Phase 3 · Commercialization — USD 50,000 · Jul–Dec 2027</div>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-month">Jul–Aug 2027 · Javier Deployment 4</div>
+      <div class="timeline-title">Export Lot Preparation &amp; Brand Launch</div>
+      <div class="timeline-desc">Commercial-scale lot preparation (5+ lots, 60–100 kg each); export-standard packaging and documentation; origin brand identity launch; buyer sample kit preparation and distribution</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-month">Sep–Oct 2027</div>
+      <div class="timeline-title">International Buyer Engagement</div>
+      <div class="timeline-desc">Sample shipments to 12+ international roasters and importers; buyer feedback collection; follow-up communications; export pricing development</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-month">Nov–Dec 2027</div>
+      <div class="timeline-title">Exhibition &amp; Program Completion</div>
+      <div class="timeline-desc">Representation at international specialty coffee exhibition; final comprehensive program report; legacy documentation; transition plan; commercialization roadmap for 2028 onwards</div>
+    </div>
+  </div>
+
+  <h2>Milestone Gate Summary</h2>
+  <table class="no-break">
+    <thead><tr><th>Milestone</th><th>Date</th><th>Gate</th><th>Key Deliverable</th></tr></thead>
+    <tbody>
+      <tr><td class="td-bold">M1 · Program Launch</td><td>Jan 2026</td><td>Phase 1 Start</td><td>JVA executed; team contracted; bioreactor ordered</td></tr>
+      <tr><td class="td-bold">M2 · First Pilot Lots</td><td>Jun 2026</td><td>Ph. 1 Midpoint</td><td>&#8805; 4 pilot lots produced and cupped; IoT system live</td></tr>
+      <tr><td class="td-bold">M3 · Phase 1 Completion</td><td>Aug 2026</td><td>Phase 2 Gate</td><td>Technical report accepted; &#8805; 6 lots documented; SOPs drafted</td></tr>
+      <tr><td class="td-bold">M4 · Producer Scale-Up</td><td>Feb 2027</td><td>Ph. 2 Midpoint</td><td>&#8805; 30 producers active; &#8805; 10 lots produced</td></tr>
+      <tr><td class="td-bold">M5 · Market Validation</td><td>Jun 2027</td><td>Phase 3 Gate</td><td>3 domestic events completed; &#8805; 6 technicians certified</td></tr>
+      <tr><td class="td-bold">M6 · Export Ready</td><td>Sep 2027</td><td>Ph. 3 Midpoint</td><td>&#8805; 5 export lots prepared; brand identity launched</td></tr>
+      <tr><td class="td-bold">M7 · Program Completion</td><td>Dec 2027</td><td>Project Close</td><td>International exhibition; full reports; legacy assets transferred</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page-footer">
+    <span>Colombia–Philippines JV · Liberica &amp; Excelsa Specialty Coffee Development</span>
+    <span>Section 12 · Timeline &amp; Milestones</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     13–14
+══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">13</div>
+    <div>
+      <div class="section-eyebrow">Performance Framework</div>
+      <div class="section-title">KPIs &amp; Success Metrics</div>
+    </div>
+  </div>
+
+  <table>
+    <thead><tr><th>KPI</th><th>Metric</th><th>Ph. 1 Target</th><th>Ph. 2 Target</th><th>Ph. 3 Target</th></tr></thead>
+    <tbody>
+      <tr><td class="td-bold">Pilot Lots Produced</td><td>Documented lots</td><td>&#8805; 6</td><td>&#8805; 12</td><td>&#8805; 15 total</td></tr>
+      <tr><td class="td-bold">Sensory Panel Score (Best Lots) <span class="score-note">&#9888; Not SCA-standard — equivalent panel of North American specialty buyers &amp; Liberica cuppers</span></td><td>SCA-equivalent panel score</td><td>&#8805; 82 pts equiv.</td><td>&#8805; 84 pts equiv.</td><td>&#8805; 86 pts equiv. target</td></tr>
+      <tr><td class="td-bold">Producers Trained</td><td>Workshop participants</td><td>&#8805; 20</td><td>&#8805; 40</td><td>40+ sustained</td></tr>
+      <tr><td class="td-bold">Certified Technicians</td><td>Certified operators</td><td>2</td><td>6</td><td>6+ graduated</td></tr>
+      <tr><td class="td-bold">IoT Batches Logged</td><td>Fermentation events with full sensor data</td><td>&#8805; 20</td><td>&#8805; 60</td><td>&#8805; 80</td></tr>
+      <tr><td class="td-bold">Fermentation Consistency</td><td>% batches within target pH/temp window</td><td>&#8805; 60%</td><td>&#8805; 80%</td><td>&#8805; 90%</td></tr>
+      <tr><td class="td-bold">Domestic Market Events</td><td>Formal tasting events conducted</td><td>0</td><td>4</td><td>&#8805; 6 total</td></tr>
+      <tr><td class="td-bold">International Samples Sent</td><td>Roaster/importer samples shipped</td><td>0</td><td>4</td><td>&#8805; 12</td></tr>
+      <tr><td class="td-bold">Export-Ready Lots</td><td>Commercial-scale lots (&#8805; 60 kg), export documented</td><td>0</td><td>2</td><td>&#8805; 5</td></tr>
+      <tr><td class="td-bold">Positive Buyer Feedback</td><td>Buyers expressing purchase intent</td><td>—</td><td>—</td><td>&#8805; 3</td></tr>
+      <tr><td class="td-bold">SOP Documents Completed</td><td>Validated SOPs per processing method</td><td>4</td><td>10</td><td>12+ library</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-header" style="margin-top:30px;">
+    <div class="section-number">14</div>
+    <div>
+      <div class="section-eyebrow">Risk Management</div>
+      <div class="section-title">Risk Assessment &amp; Mitigation</div>
+    </div>
+  </div>
+
+  <table>
+    <thead><tr><th>Risk</th><th>Category</th><th>Likelihood</th><th>Impact</th><th>Mitigation</th></tr></thead>
+    <tbody>
+      <tr><td class="td-bold">Typhoon / seasonal disruption</td><td>Climate</td><td class="risk-high">High</td><td class="risk-med">Medium</td><td>Field deployments aligned with dry season; covered drying infrastructure; contingency buffer in schedule</td></tr>
+      <tr><td class="td-bold">Bioreactor delivery/customs delay</td><td>Logistics</td><td class="risk-med">Medium</td><td class="risk-high">High</td><td>Early procurement (Month 1); experienced customs broker; supplemental tanks as operational fallback during commissioning</td></tr>
+      <tr><td class="td-bold">Producer adoption resistance</td><td>Social</td><td class="risk-med">Medium</td><td class="risk-high">High</td><td>Quality premium incentive design; early engagement of respected local leaders (Villegas, Juan); bilingual training; peer demonstration plots</td></tr>
+      <tr><td class="td-bold">Quality inconsistency (early phases)</td><td>Technical</td><td class="risk-med">Medium</td><td class="risk-med">Medium</td><td>IoT real-time monitoring enables rapid process correction; pilot phase specifically characterizes Liberica fermentation behavior before scale-up</td></tr>
+      <tr><td class="td-bold">Colombian team travel disruption</td><td>Operational</td><td class="risk-low">Low</td><td class="risk-med">Medium</td><td>4 deployments distributed across 24 months; remote technical support maintained between visits; critical transfer periods scheduled well in advance</td></tr>
+      <tr><td class="td-bold">Market reception below expectation</td><td>Commercial</td><td class="risk-low">Low</td><td class="risk-med">Medium</td><td>Domestic validation (Phase 2) precedes international positioning; diversified buyer outreach (12+ targets); price points calibrated conservatively</td></tr>
+      <tr><td class="td-bold">Governance conflicts between partners</td><td>Governance</td><td class="risk-low">Low</td><td class="risk-high">High</td><td>JVA includes explicit conflict resolution procedures; JMC monthly meetings for early visibility; independent advisor available for mediation</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page-footer">
+    <span>Colombia–Philippines JV · Liberica &amp; Excelsa Specialty Coffee Development</span>
+    <span>Sections 13–14 · KPIs &amp; Risk Assessment</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     15–16
+══════════════════════════════════════════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="section-number">15</div>
+    <div>
+      <div class="section-eyebrow">Beyond the Project</div>
+      <div class="section-title">Long-Term Vision</div>
+    </div>
+  </div>
+
+  <h2>Scaling Opportunities</h2>
+  <p>The systems, protocols, and trained human capital developed under this project are explicitly designed to be scalable. The bioreactor and IoT platform can accommodate additional farm sites and fermentation batches as the technology provider's licensing model allows. The technician certification program can be expanded into a nationally recognized post-harvest training credential under partnership with TESDA or the Philippine Coffee Board. The SOP library becomes a living document, adaptable to other Philippine coffee regions.</p>
+  <p>A successful Phase 3 outcome creates the foundation for a five-year commercialization phase targeting annual specialty Liberica and Excelsa export volumes of 5–15 metric tons, generating FOB revenues in the range of USD 120,000–250,000 per year at maturity — exclusively from the Batangas pilot region. Regional replication across CALABARZON, Cavite, and Mindanao Liberica areas would multiply these figures substantially.</p>
+
+  <h2>Regional Expansion</h2>
+  <p>Batangas is chosen as the entry point for its proximity to Manila, established Liberica heritage, and the institutional networks of the Philippine initiating partners. The technical system developed here is directly transferable to other Liberica-producing regions — including Cavite, Quezon, and the emerging Liberica cultivation areas of Northern Mindanao. The project's documentation and SOP library are designed from the outset with this replication intent.</p>
+
+  <h2>Philippine Specialty Coffee Identity</h2>
+  <p>Beyond commercial metrics, this initiative has the potential to reshape how the world perceives Philippine coffee. The country's four-species legacy — unique globally — combined with a documented, data-verified precision processing system and a compelling origin narrative, creates a brand positioning that no other coffee-producing country can replicate. <em>Batangas Barako, precision-fermented</em> is not merely a product — it is an expression of Philippine agricultural identity brought to the standards of the global specialty market.</p>
+
+  <div class="callout no-break">
+    <div class="callout-title">Vision Statement</div>
+    <div class="callout-body">By 2028, Batangas Liberica and Philippine Excelsa should be recognized names on international specialty coffee menus — not as curiosities, but as premium, traceable, precision-processed origins with documented sensory identities and reliable supply. This project is the foundation on which that recognition is built.</div>
+  </div>
+
+  <div class="section-header" style="margin-top:30px;">
+    <div class="section-number">16</div>
+    <div>
+      <div class="section-eyebrow">Supplementary Materials</div>
+      <div class="section-title">Annex Suggestions</div>
+    </div>
+  </div>
+
+  <ul>
+    <li><strong>Annex A:</strong> Fermentation Standard Operating Procedures — separate SOPs for washed, honey, natural, and anaerobic processing methods, calibrated for Liberica and Excelsa physiological parameters</li>
+    <li><strong>Annex B:</strong> Bioreactor &amp; IoT System Technical Specifications — technology provider specifications, network topology, data schema, use license terms, and maintenance protocols</li>
+    <li><strong>Annex C:</strong> Cherry Maturity and Harvest Quality Standards — visual guides, Brix benchmarks, and sorting protocols with photographic references</li>
+    <li><strong>Annex D:</strong> Technician Certification Curriculum Outline — 80-hour course structure, learning objectives, assessment criteria, and certification standards</li>
+    <li><strong>Annex E:</strong> Implementation Maps — GPS-referenced maps of pilot farm sites, processing station locations, and logistics routes in Batangas region</li>
+    <li><strong>Annex F:</strong> Partner and Team Bios — professional profiles of Javier Eduardo Chacón, Pablito M. Villegas, Pacita Juan, and key technical staff</li>
+    <li><strong>Annex G:</strong> Sample Fermentation Data Dashboard — illustrative IoT data outputs, fermentation curves, and process monitoring visualizations</li>
+    <li><strong>Annex H:</strong> Domestic Market Validation Protocols — consumer tasting event formats, blind cupping score sheets, price acceptance survey instruments</li>
+    <li><strong>Annex I:</strong> International Buyer Engagement Plan — target buyer list, sample kit specifications, exhibition representation strategy</li>
+    <li><strong>Annex J:</strong> Joint Venture Agreement Term Sheet — key commercial terms, IP framework (including technology provider rights), revenue sharing provisions, and dispute resolution mechanisms</li>
+  </ul>
+
+  <!-- CLOSING -->
+  <div style="margin-top:36px;padding:22px 28px;background:#131313;text-align:center;">
+    <div style="font-size:6.5pt;letter-spacing:2.5px;text-transform:uppercase;color:rgba(200,169,81,0.7);margin-bottom:10px;font-weight:700;">End of Proposal</div>
+    <div style="font-size:12pt;font-weight:800;color:#fff;margin-bottom:8px;font-family:'Montserrat',sans-serif;">Colombia–Philippines Specialty Coffee Joint Venture</div>
+    <div style="font-size:8.5pt;color:rgba(255,255,255,0.55);margin-bottom:16px;font-weight:400;">Batangas Liberica &amp; Excelsa · Precision Fermentation · IoT-Enabled Post-Harvest · Global Market Positioning</div>
+    <div style="display:flex;justify-content:center;gap:28px;font-size:8pt;color:rgba(255,255,255,0.4);font-weight:500;flex-wrap:wrap;">
+      <span>Javier Eduardo Chacón · Huila, Colombia</span>
+      <span style="color:rgba(200,169,81,0.3);">|</span>
+      <span>Pablito M. Villegas &amp; Pacita Juan · Philippines</span>
+    </div>
+    <div style="margin-top:12px;font-size:7pt;color:rgba(255,255,255,0.2);letter-spacing:1px;font-weight:500;">CONFIDENTIAL — FOR AUTHORIZED REVIEW ONLY — 2026</div>
+  </div>
+
+  <div class="page-footer">
+    <span>Colombia–Philippines JV · Liberica &amp; Excelsa Specialty Coffee Development</span>
+    <span>Sections 15–16 · Long-Term Vision &amp; Annexes</span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Colombia–Philippines JV · Executive Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+
+:root{
+  --dark:#131313;
+  --green:#2d5a27;
+  --green-mid:#4a8c3f;
+  --green-light:#7ab648;
+  --gold:#c8a951;
+  --gold-light:#e8d48a;
+  --gray:#cfcfcf;
+  --gray-light:#f0ede3;
+  --gray-mid:#e0ddd3;
+  --text:#1a1a1a;
+  --muted:#555;
+  --border:#d4d0c0;
+}
+
+body{
+  font-family:'Montserrat',sans-serif;
+  font-size:9.5pt;
+  line-height:1.65;
+  color:var(--text);
+  background:#fff;
+  max-width:210mm;
+  margin:0 auto;
+}
+
+@media print{
+  @page{size:A4;margin:10mm 12mm;}
+  body{font-size:8.5pt;max-width:100%;}
+  .print-btn{display:none;}
+  .page-break{page-break-before:always;}
+  .no-break{page-break-inside:avoid;}
+}
+
+/* ── PRINT BTN ── */
+.print-btn{
+  position:fixed;bottom:20px;right:20px;
+  background:var(--dark);color:#fff;
+  font-family:'Montserrat',sans-serif;
+  font-size:7.5pt;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;padding:9px 18px;
+  border:none;cursor:pointer;z-index:999;
+}
+.print-btn:hover{background:var(--green);}
+
+/* ── HEADER BAND ── */
+.header{
+  background:var(--dark);
+  padding:10mm 14mm 8mm;
+  position:relative;
+  overflow:hidden;
+}
+.header::after{
+  content:'';
+  position:absolute;
+  bottom:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--green),var(--gold),var(--green));
+}
+.header-eyebrow{
+  font-size:6.5pt;font-weight:700;letter-spacing:3px;
+  text-transform:uppercase;color:var(--gold);margin-bottom:8px;
+}
+.header-title{
+  font-size:20pt;font-weight:900;color:#fff;
+  line-height:1.1;margin-bottom:6px;
+}
+.header-title span{color:var(--gold);}
+.header-sub{
+  font-size:9pt;color:rgba(255,255,255,0.55);
+  font-weight:400;max-width:540px;line-height:1.5;
+  margin-bottom:14px;
+}
+.header-meta{
+  display:flex;gap:20px;flex-wrap:wrap;
+}
+.header-meta-item{
+  font-size:7.5pt;font-weight:600;
+  color:rgba(255,255,255,0.4);letter-spacing:0.5px;
+}
+.header-meta-item strong{color:rgba(255,255,255,0.85);font-weight:700;}
+
+/* ── BODY WRAPPER ── */
+.body{padding:8mm 14mm 10mm;}
+
+/* ── SECTION LABELS ── */
+.section-label{
+  display:inline-block;
+  background:var(--dark);
+  color:#fff;
+  font-size:6.5pt;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;
+  padding:4px 12px;
+  margin-bottom:10px;
+}
+
+/* ── ABSTRACT ── */
+.abstract{
+  background:var(--gray-light);
+  padding:16px 18px;
+  margin-bottom:22px;
+}
+.abstract p{
+  font-size:9.5pt;line-height:1.75;
+  color:var(--text);margin:0;
+  font-weight:400;
+}
+.abstract p + p{margin-top:10px;}
+
+/* ── IMPACT SECTION ── */
+.impact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-bottom:22px;
+}
+.impact-card{
+  background:var(--gray);
+  padding:14px 12px;
+}
+.impact-icon{
+  font-size:7pt;font-weight:800;letter-spacing:1px;
+  text-transform:uppercase;color:var(--green);
+  margin-bottom:6px;
+}
+.impact-value{
+  font-size:16pt;font-weight:900;
+  color:var(--dark);line-height:1;
+  margin-bottom:4px;
+}
+.impact-label{
+  font-size:7.5pt;font-weight:500;
+  color:var(--muted);line-height:1.4;
+}
+
+.impact-list{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:8px;margin-bottom:22px;
+}
+.impact-item{
+  background:var(--gray-light);
+  border-left:3px solid var(--green-mid);
+  padding:10px 12px;
+  font-size:8.5pt;
+  line-height:1.5;
+}
+.impact-item strong{
+  display:block;font-size:7.5pt;font-weight:700;
+  text-transform:uppercase;letter-spacing:0.5px;
+  color:var(--green);margin-bottom:3px;
+}
+
+/* ── TIMELINE ── */
+.timeline-wrap{
+  margin-bottom:22px;
+}
+.timeline-row{
+  display:grid;
+  grid-template-columns:90px 1fr;
+  gap:0;
+  margin-bottom:0;
+}
+.timeline-row:last-child .tl-bar{border-bottom:none;}
+
+.tl-date{
+  padding:12px 10px 12px 0;
+  font-size:7.5pt;font-weight:700;
+  color:var(--muted);letter-spacing:0.5px;
+  border-right:2px solid var(--gray);
+  text-align:right;
+  line-height:1.4;
+}
+.tl-content{
+  padding:12px 0 12px 16px;
+  border-bottom:1px solid var(--gray-mid);
+  position:relative;
+}
+.tl-content::before{
+  content:'';
+  position:absolute;
+  left:-6px;top:17px;
+  width:10px;height:10px;
+  background:var(--green-mid);
+  border-radius:50%;
+  border:2px solid #fff;
+  box-shadow:0 0 0 1.5px var(--green-mid);
+}
+.tl-phase{
+  font-size:6.5pt;font-weight:800;letter-spacing:1.5px;
+  text-transform:uppercase;color:var(--gold);
+  margin-bottom:2px;
+}
+.tl-title{
+  font-size:9.5pt;font-weight:700;color:var(--dark);
+  margin-bottom:3px;
+}
+.tl-desc{
+  font-size:8pt;color:var(--muted);line-height:1.5;
+}
+.tl-milestone{
+  display:inline-block;
+  background:var(--dark);color:#fff;
+  font-size:6.5pt;font-weight:700;
+  padding:2px 8px;margin-top:5px;
+  letter-spacing:0.5px;
+}
+
+/* ── INVESTMENT TABLE ── */
+.inv-table{
+  width:100%;border-collapse:collapse;
+  margin-bottom:22px;font-size:8.5pt;
+}
+.inv-table th{
+  background:var(--dark);color:#fff;
+  padding:7px 12px;text-align:left;
+  font-weight:700;font-size:7.5pt;letter-spacing:0.3px;
+}
+.inv-table td{
+  padding:9px 12px;
+  border-bottom:1px solid var(--border);
+  vertical-align:top;
+}
+.inv-table tr:nth-child(even) td{background:var(--gray-light);}
+.inv-num{text-align:right;font-weight:600;}
+.inv-total td{
+  background:var(--dark) !important;
+  color:#fff;font-weight:700;
+  border-bottom:none;
+}
+.inv-phase-label{
+  font-size:8pt;font-weight:700;color:var(--dark);
+}
+.inv-phase-sub{
+  font-size:7.5pt;font-weight:400;color:var(--muted);
+}
+
+.inv-bar-wrap{
+  display:flex;gap:0;height:10px;
+  margin-bottom:6px;
+  overflow:hidden;
+}
+.inv-bar{height:100%;}
+.inv-legend{
+  display:flex;gap:16px;
+  font-size:7.5pt;color:var(--muted);
+  margin-bottom:16px;flex-wrap:wrap;
+}
+.inv-legend-item{display:flex;align-items:center;gap:5px;}
+.inv-legend-dot{width:10px;height:10px;flex-shrink:0;}
+
+/* ── FAQ / DISCUSSION ── */
+.faq-list{margin-bottom:16px;}
+.faq-item{
+  border-bottom:1px solid var(--border);
+  padding:12px 0;
+}
+.faq-item:last-child{border-bottom:none;}
+.faq-q{
+  font-size:9pt;font-weight:700;color:var(--dark);
+  margin-bottom:5px;
+  display:flex;gap:8px;align-items:flex-start;
+}
+.faq-q-mark{
+  background:var(--green-mid);color:#fff;
+  font-size:7pt;font-weight:800;
+  width:16px;height:16px;min-width:16px;
+  display:flex;align-items:center;justify-content:center;
+  margin-top:1px;
+  flex-shrink:0;
+}
+.faq-a{
+  font-size:8.5pt;color:var(--muted);
+  line-height:1.65;padding-left:24px;
+}
+
+/* ── FOOTER ── */
+.doc-footer{
+  margin-top:16px;
+  padding:10px 14mm;
+  background:var(--dark);
+  display:flex;justify-content:space-between;
+  align-items:center;
+  font-size:7pt;color:rgba(255,255,255,0.35);
+  font-weight:500;letter-spacing:0.5px;
+}
+.doc-footer strong{color:var(--gold);font-weight:700;}
+
+/* ── TWO-COL LAYOUT ── */
+.two-col{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-bottom:22px;
+}
+
+/* ── DIVIDER ── */
+.divider{
+  border:none;
+  border-top:1px solid var(--border);
+  margin:20px 0;
+}
+
+/* ── NOTE ── */
+.note{
+  font-size:7.5pt;font-style:italic;
+  color:var(--muted);margin-top:4px;
+  line-height:1.5;
+}
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+
+<!-- ── HEADER ─────────────────────────────────────────── -->
+<div class="header">
+  <div class="header-eyebrow">Executive Brief · Colombia–Philippines Joint Venture</div>
+  <div class="header-title">Elevating Philippine <span>Liberica &amp; Excelsa</span><br/>to Global Specialty Markets</div>
+  <div class="header-sub">A strategic technology partnership to transform Batangas rare-species coffee into a globally competitive specialty origin through Colombian precision fermentation and IoT-enabled post-harvest systems.</div>
+  <div class="header-meta">
+    <div class="header-meta-item">Total Investment <strong>USD 260,000</strong></div>
+    <div class="header-meta-item">Duration <strong>24 Months · 2026–2027</strong></div>
+    <div class="header-meta-item">Phases <strong>3 Funded Phases</strong></div>
+    <div class="header-meta-item">Primary Region <strong>Batangas, Philippines</strong></div>
+    <div class="header-meta-item">Technical Lead <strong>Javier Eduardo Chacón · Huila, Colombia</strong></div>
+  </div>
+</div>
+
+<!-- ── BODY ─────────────────────────────────────────────── -->
+<div class="body">
+
+  <!-- ABSTRACT -->
+  <div class="section-label">Abstract</div>
+  <div class="abstract no-break">
+    <p>The Philippines is the only country in the world producing <em>Coffea liberica</em> (Barako) and <em>Coffea excelsa</em> at meaningful commercial scale — a species heritage with no parallel globally. Yet these coffees remain almost entirely absent from international specialty markets, not due to lack of quality potential, but due to a persistent gap in post-harvest technology, process standardization, and market positioning infrastructure.</p>
+    <p>This joint venture closes that gap by deploying Colombia's most advanced post-harvest science — precision fermentation design, controlled anaerobic processing, and an integrated bioreactor and IoT monitoring platform — directly into Batangas-region Liberica and Excelsa farms. The program is led by Colombian specialist Javier Eduardo Chacón in partnership with Philippine coffee industry initiators Pablito M. Villegas and Pacita Juan, targeting a minimum of 15 specialty-grade documented pilot lots, 40 trained producers, and at least 5 export-ready commercial lots within 24 months. The end goal is a Philippine specialty coffee origin — Batangas Liberica and Excelsa — that international roasters can source, tell a story about, and pay a significant premium for.</p>
+  </div>
+
+  <!-- EXPECTED IMPACT -->
+  <div class="section-label">Expected Impact to the Philippine Coffee Business</div>
+
+  <div class="impact-grid no-break">
+    <div class="impact-card">
+      <div class="impact-icon">Export Premium</div>
+      <div class="impact-value">$8–15</div>
+      <div class="impact-label">USD/kg premium above conventional green coffee, achievable within 36 months of market entry</div>
+    </div>
+    <div class="impact-card">
+      <div class="impact-icon">Annual Revenue Potential</div>
+      <div class="impact-value">$120–250K</div>
+      <div class="impact-label">Estimated annual FOB revenue at maturity from Batangas region alone — scalable to other regions</div>
+    </div>
+    <div class="impact-card">
+      <div class="impact-icon">Producers Impacted</div>
+      <div class="impact-value">40+</div>
+      <div class="impact-label">Smallholder Liberica producers in Malvar, Lipa, and Cavite accessing quality-linked premium pricing</div>
+    </div>
+  </div>
+
+  <div class="impact-list no-break">
+    <div class="impact-item">
+      <strong>New Export Category</strong>
+      Establishes a commercially viable, traceable specialty Liberica and Excelsa green coffee export channel — a category that does not currently exist at international market standards.
+    </div>
+    <div class="impact-item">
+      <strong>Permanent Technical Infrastructure</strong>
+      All processing equipment, the bioreactor platform (use license), cupping lab, and drying infrastructure remain in the Philippines, permanently raising the post-harvest capability floor for the region.
+    </div>
+    <div class="impact-item">
+      <strong>Local Human Capital</strong>
+      6+ certified post-harvest technicians and 40+ trained producers create a self-sustaining knowledge base — the program continues and scales without dependency on external experts.
+    </div>
+    <div class="impact-item">
+      <strong>Species Heritage Monetized</strong>
+      Converts a cultural and biological asset — Barako Liberica, unique to the Philippines — into a globally recognized premium product with documented sensory identity and compelling origin narrative.
+    </div>
+    <div class="impact-item">
+      <strong>Domestic Market Anchor</strong>
+      Validated price acceptance and roaster engagement in Manila, Cebu, and Davao creates a domestic specialty premium market that supports producers independently of export cycles.
+    </div>
+    <div class="impact-item">
+      <strong>Climate Resilience Positioning</strong>
+      Liberica's natural heat and humidity tolerance positions the Philippines favorably as climate change compresses Arabica growing zones — giving the sector long-term competitive relevance.
+    </div>
+  </div>
+
+  <hr class="divider"/>
+
+  <!-- TIMELINE -->
+  <div class="section-label">Timeline</div>
+  <div class="timeline-wrap no-break">
+
+    <div class="timeline-row">
+      <div class="tl-date">Jan–Aug<br/>2026</div>
+      <div class="tl-content">
+        <div class="tl-phase">Phase 1 · Foundation &amp; Pilot</div>
+        <div class="tl-title">Infrastructure, IoT Deployment &amp; First Pilot Lots</div>
+        <div class="tl-desc">JV formalization · farm mapping and producer selection · bioreactor and IoT platform installation · first fermentation pilots (washed, honey, anaerobic) · cupping lab commissioning · initial producer workshops · 6 documented pilot lots</div>
+        <div class="tl-milestone">Gate: Technical report + ≥ 6 lots before Phase 2 release</div>
+      </div>
+    </div>
+
+    <div class="timeline-row">
+      <div class="tl-date">Sep 2026–<br/>Jun 2027</div>
+      <div class="tl-content">
+        <div class="tl-phase">Phase 2 · Scale &amp; Training</div>
+        <div class="tl-title">Full Producer Rollout, Technician Certification &amp; Domestic Validation</div>
+        <div class="tl-desc">Scale to 40 producers · technician certification program (80-hour curriculum) · peak production season: 8–10 additional lots · brand identity development · domestic market tasting events in Manila, Cebu, and Davao · SOP library finalized · 6 technicians certified</div>
+        <div class="tl-milestone">Gate: 3 domestic events + 6 certified technicians before Phase 3 release</div>
+      </div>
+    </div>
+
+    <div class="timeline-row">
+      <div class="tl-date">Jul–Dec<br/>2027</div>
+      <div class="tl-content">
+        <div class="tl-phase">Phase 3 · Commercialization</div>
+        <div class="tl-title">Export Readiness, International Buyer Engagement &amp; Exhibition</div>
+        <div class="tl-desc">5+ export-ready commercial lots · origin brand launch · sample kits shipped to 12+ international roasters and importers · representation at international specialty coffee exhibition (SCA Expo or World of Coffee) · final program report and legacy asset transfer</div>
+        <div class="tl-milestone">Outcome: Recognized specialty origin + active buyer pipeline</div>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="divider"/>
+
+  <!-- INVESTMENT SCHEDULE -->
+  <div class="section-label">Investment Schedule</div>
+
+  <div class="inv-bar-wrap" style="margin-bottom:6px;">
+    <div class="inv-bar" style="width:40.4%;background:#2d5a27;"></div>
+    <div class="inv-bar" style="width:40.4%;background:#c8a951;"></div>
+    <div class="inv-bar" style="width:19.2%;background:#4a8c3f;"></div>
+  </div>
+  <div class="inv-legend">
+    <div class="inv-legend-item"><div class="inv-legend-dot" style="background:#2d5a27;"></div>Phase 1 · $105,000 (40%)</div>
+    <div class="inv-legend-item"><div class="inv-legend-dot" style="background:#c8a951;"></div>Phase 2 · $105,000 (40%)</div>
+    <div class="inv-legend-item"><div class="inv-legend-dot" style="background:#4a8c3f;"></div>Phase 3 · $50,000 (20%)</div>
+  </div>
+
+  <table class="inv-table no-break">
+    <thead>
+      <tr>
+        <th>Phase</th>
+        <th>Period</th>
+        <th>Key Deliverables</th>
+        <th style="text-align:right;">USD</th>
+        <th style="text-align:right;">PHP *</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="inv-phase-label">Phase 1</div>
+          <div class="inv-phase-sub">Foundation &amp; Pilot</div>
+        </td>
+        <td style="white-space:nowrap;font-size:8pt;">Jan–Aug 2026</td>
+        <td style="font-size:8pt;">Bioreactor + IoT installation ($90K), farm assessments, first pilot lots, initial training</td>
+        <td class="inv-num">$105,000</td>
+        <td class="inv-num" style="color:var(--muted);">PHP 5,880,000</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="inv-phase-label">Phase 2</div>
+          <div class="inv-phase-sub">Scale &amp; Training</div>
+        </td>
+        <td style="white-space:nowrap;font-size:8pt;">Sep 2026–Jun 2027</td>
+        <td style="font-size:8pt;">Full producer rollout, technician certification, domestic market validation, scale-up lots</td>
+        <td class="inv-num">$105,000</td>
+        <td class="inv-num" style="color:var(--muted);">PHP 5,880,000</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="inv-phase-label">Phase 3</div>
+          <div class="inv-phase-sub">Commercialization</div>
+        </td>
+        <td style="white-space:nowrap;font-size:8pt;">Jul–Dec 2027</td>
+        <td style="font-size:8pt;">Export lots, brand launch, international buyer sampling, exhibition</td>
+        <td class="inv-num">$50,000</td>
+        <td class="inv-num" style="color:var(--muted);">PHP 2,800,000</td>
+      </tr>
+      <tr class="inv-total">
+        <td colspan="3" style="color:#fff;font-weight:700;">Total · 24-Month Program</td>
+        <td class="inv-num" style="color:#fff;">$260,000</td>
+        <td class="inv-num" style="color:var(--gold);">PHP 14,560,000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="two-col no-break" style="margin-bottom:16px;">
+    <div style="background:var(--gray-light);padding:12px 14px;">
+      <div style="font-size:7pt;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--green);margin-bottom:6px;">Budget Allocation</div>
+      <div style="font-size:8pt;line-height:1.8;color:var(--text);">
+        Personnel &amp; expertise &nbsp;·&nbsp; <strong>$134,000</strong> (52%)<br/>
+        Bioreactor &amp; IoT system &nbsp;·&nbsp; <strong>$90,000</strong> (35%)<br/>
+        Supporting equipment &nbsp;·&nbsp; <strong>$23,120</strong> (9%)<br/>
+        Travel &amp; deployment &nbsp;·&nbsp; <strong>$31,000</strong> (12%)<br/>
+        R&amp;D + Marketing &nbsp;·&nbsp; <strong>$24,600</strong> (9%)<br/>
+        Contingency &nbsp;·&nbsp; <strong>$8,280</strong> (3%)
+      </div>
+    </div>
+    <div style="background:var(--gray-light);padding:12px 14px;">
+      <div style="font-size:7pt;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--green);margin-bottom:6px;">Phase Funding Structure</div>
+      <div style="font-size:8pt;line-height:1.8;color:var(--text);">
+        Each phase is funded sequentially upon verified milestone completion. Phase transitions require formal review and acceptance of deliverables by the Joint Management Committee. This protects investors and ensures accountability at each stage before the next tranche is released.
+      </div>
+    </div>
+  </div>
+
+  <p class="note">* PHP equivalent calculated at USD 1 = PHP 56.00 (indicative). Actual disbursements subject to prevailing exchange rates. IoT system IP remains sole property of the technology provider; the joint venture holds an operational use license for the program duration.</p>
+
+  <hr class="divider"/>
+
+  <!-- DISCUSSION POINTS -->
+  <div class="section-label">Discussion Points</div>
+  <div class="faq-list">
+
+    <div class="faq-item no-break">
+      <div class="faq-q"><div class="faq-q-mark">Q</div>Why does this need Colombian expertise — can't Philippine technicians develop these protocols independently?</div>
+      <div class="faq-a">The specific combination of controlled anaerobic fermentation, precision honey processing, and IoT-integrated real-time monitoring has taken Colombia over a decade of field-level iteration to develop. Replicating that from scratch in the Philippines would require a similar timeline and significant independent R&amp;D investment. This partnership compresses that learning curve to 24 months by importing proven methodology directly — and critically, it transfers the knowledge permanently through certified local technicians and documented SOPs, so the Philippines owns the capability by project end.</div>
+    </div>
+
+    <div class="faq-item no-break">
+      <div class="faq-q"><div class="faq-q-mark">Q</div>Liberica and Excelsa are not scored by SCA standards. How will quality be evaluated and communicated to buyers?</div>
+      <div class="faq-a">This is an important distinction. Standard SCA cupping protocols and scoring are designed for Arabica and do not translate meaningfully to Liberica or Excelsa. All quality evaluation in this program will be conducted by a dedicated panel of North American specialty buyers and Liberica-trained cuppers using an SCA-equivalent methodology adapted for these species. Point scores referenced in the proposal (e.g., ≥ 84 pts) represent equivalency on this adapted scale — not official SCA scores. This is consistent with how other non-Arabica specialty lots (e.g., fine Robusta) are increasingly evaluated in the market.</div>
+    </div>
+
+    <div class="faq-item no-break">
+      <div class="faq-q"><div class="faq-q-mark">Q</div>Who owns the IoT technology and the fermentation data generated during the program?</div>
+      <div class="faq-a">The bioreactor hardware, IoT platform software, algorithms, and all associated intellectual property remain the sole property of the technology providers selected to execute the project. The joint venture holds an operational use license for the program duration. Fermentation data and process records generated through the system are either jointly owned by the venture partners or made publicly available through co-publications with any academic institutions participating in the implementation — to be agreed on a case-by-case basis. Operational SOPs, flavor maps, and training materials developed by the team are jointly owned by the Philippine and Colombian partners.</div>
+    </div>
+
+    <div class="faq-item no-break">
+      <div class="faq-q"><div class="faq-q-mark">Q</div>Is the $90,000 bioreactor and IoT system cost justified for a 24-month pilot program?</div>
+      <div class="faq-a">Yes, for two reasons. First, this is not a consumable — the system is a permanent infrastructure investment that remains in the Philippines after the project ends, enabling future production seasons at no additional capital cost. Second, the IoT platform is what makes the program scientifically credible and commercially differentiated: real-time fermentation monitoring, reproducible batch-to-batch consistency, and AI-assisted process optimization are precisely what converts anecdotal quality improvements into internationally verifiable, buyer-trustworthy claims. A program without this infrastructure would produce good coffee; this system produces documented, traceable, premium coffee.</div>
+    </div>
+
+    <div class="faq-item no-break">
+      <div class="faq-q"><div class="faq-q-mark">Q</div>What happens after the 24-month program ends? Is this a self-sustaining model?</div>
+      <div class="faq-a">The program is explicitly designed for post-project independence. By Month 24, the Philippines side will have: 6+ certified post-harvest technicians, a complete SOP library in English and Filipino, fully installed processing and quality infrastructure, an established domestic market presence, and an active pipeline of international buyer relationships. A commercialization roadmap for 2028 onwards is a formal project deliverable. The Colombian partner's role transitions from implementation lead to periodic advisory — available for technical consultation and continued market representation, but no longer operationally required for day-to-day production.</div>
+    </div>
+
+    <div class="faq-item no-break">
+      <div class="faq-q"><div class="faq-q-mark">Q</div>Is there international demand for Philippine Liberica right now, or is this creating a market that doesn't exist yet?</div>
+      <div class="faq-a">Demand exists — supply does not. Multiple prominent international specialty roasters have publicly expressed interest in sourcing traceable, high-quality Liberica, and the species has been featured in specialty coffee media as one of the most anticipated "new" origins. The challenge is that no Philippine producer has yet been able to meet the quality consistency, documentation, and traceability standards required by specialty importers. This program is not a market creation exercise — it is a supply development program for a market that is already asking for the product.</div>
+    </div>
+
+    <div class="faq-item no-break">
+      <div class="faq-q"><div class="faq-q-mark">Q</div>Can the program be replicated in other Philippine Liberica-producing regions after Batangas?</div>
+      <div class="faq-a">Yes, and this is explicitly part of the long-term vision. Batangas is the entry point because of its established Liberica heritage, proximity to Manila, and the institutional networks of the Philippine initiating partners. The SOP library, training curriculum, and IoT system architecture are all designed from the outset with replication in mind — transferable to Cavite, Quezon, and Northern Mindanao Liberica areas with minimal adaptation. A successful Batangas program creates the proof-of-concept, the trained trainers, and the market relationships needed to scale nationally.</div>
+    </div>
+
+  </div>
+
+</div><!-- end body -->
+
+<!-- ── FOOTER ─────────────────────────────────────────── -->
+<div class="doc-footer">
+  <span>Colombia–Philippines JV · Liberica &amp; Excelsa Specialty Coffee Development · <strong>Executive Brief</strong></span>
+  <span>Confidential — For Authorized Review Only · 2026</span>
+</div>
+
+</body>
+</html>
